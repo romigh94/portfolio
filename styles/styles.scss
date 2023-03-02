@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+$primary: #00B2CA;
+$secondary: #0A0874;
+$comp: #5900CA;
+
+$heading-font: Kanit;
+$body-font: K2D;
+
+
+*{
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+}
+
+p, div, nav, ul, li, button {
+    font-family: K2D;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+
+.primary-button {
+    background-color: $primary;
+}
+
+.secondary-button {
+    background-color: $secondary;
+}
+
+.comp-button {
+    background-color: $comp;
+}
+
+.primary-button:hover, .secondary-button:hover, .comp-button:hover {
+    filter: brightness(110%);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+/* --------------- HOME --------------- */
+
+.imgbanner-container {
+    height: 100vh; 
+
+
+    img {
+        max-width: 100%;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        object-fit: cover;
+        filter: brightness(50%);
+        border-radius: 0px;
+    }
+
+    .img-caption {
+        position: relative;
+        top: 40vh;
+        z-index: 0;
+        width: 700px;
+        color: white;
+    }
+}
+
+
+
+/* ---------------- NAV BAR ------------------- */
+
+
+.logo {
+    font-size: 100px;
+    color: $primary;
+}
+
+.logo:hover {
+    color: white;
+}
+
+.navbar-container {
+    width: 100%;
+    z-index: 20;
+    color: white;
+    position: fixed;
+
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover {
+    color: $primary;
+}
+
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 110px;
+    z-index: 2;
+    transition: 0.4s ease-out;
+}
+
+
+
+/* ----------------- ABOUT ME ---------- */
+
+
+.about-container {
+    width: 700px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .profile-img {
+        border-radius: 100%;
+        width: 150px;
+    }
+
+
+    .row {
+        width: 500px;
+        margin: 0 auto;
+    }
+      
+
+    .col-xs-4 {
+        width: 100px;
+        margin: 0 auto;
+        padding: 6px;
+    }
+
+
+
+}
+
+
+
+/* ----------- WORK ------------ */
+.work-container {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .card {
+        width: 500px;
+    }
+}
+
+
+.img-wrapper {
+    overflow: hidden;
+    position: relative;
+
+    .portfolio-Image {
+        display: inline-block;
+        width: 100%;
+        height: 300px;
+      
+      }
+
+      .img-content {
+        position: absolute;
+        top: 100px;
+        inset: 0;
+        padding: 100px;
+        background: black;
+        align-items: center;
+        opacity: 0;
+  
+    }
+
+    .portfolio-Image, .img-content {
+        transition: 500ms ease-in-out;
+    }
+
+    h5 {
+        color: $primary;
+    }
+  }
+  
+
+  
+  .img-wrapper:hover {
+    .img-content {
+    opacity: .8;
+    cursor: pointer;
+  }
+}
+  

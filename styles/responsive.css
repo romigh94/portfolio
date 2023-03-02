@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px) {
+  .BurgerMenu {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .BurgerMenu {
+    transition: 0.3s linear;
+  }
+  .burger {
+    background-color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .li-item {
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+  }
+}
