@@ -17,6 +17,7 @@ const Navbar = () => {
 
 
 
+
             const stickyNavbar = () => {
                 if (window !== undefined) {
                     let screenHeight = window.scrollY
@@ -48,13 +49,13 @@ const Navbar = () => {
         <div className='inner-container'>
             <nav className='navbar navbar-expand-md'>
 
-            <div className="p-5">
+            <div className={stickyClass === "sticky" ? "img-logo pb-4 ps-5" : "img-logo pb-5 ps-5"}>
                 <a href='/'>
                         <img src="/icons/RG.svg" />
                 </a>
             </div>
                 
-                <div className='p-5'>
+                <div className='pb-3 pe-3' onClick={(e) => e.preventDefault()}>
                         <a 
                             href="#"
                             onClick={() => setSelected(!selected)} 
@@ -70,9 +71,9 @@ const Navbar = () => {
                 </div>
 
                 <div className={collapse}>
-                    <ul className='ms-auto navbar text-white p-3'>
+                    <ul className={stickyClass === "sticky" ? 'ms-auto navbar text-white' : 'ms-auto navbar text-white pt-4'}>
                         
-                            <li className="px-3 li-item">
+                            <li className={stickyClass === "sticky" ? "sticky-item px-3" : "pb-5 px-3"}>
                                 <a className="nav-item" href="#/About">
                                         About
                                 </a>
@@ -80,20 +81,20 @@ const Navbar = () => {
                             
                            
 
-                            <li className="px-3 li-item">
+                            <li className={stickyClass === "sticky" ? "sticky-item px-3" : "pb-5 px-3"}>
                                 <a className="nav-item" href='#/Work'>
                                         Work
                                 </a>
                             </li>
 
-                            <li className="px-3 li-item">
-                                <a className="nav-item" href='/'>
+                            <li className={stickyClass === "sticky" ? "sticky-item px-3" : "pb-5 px-3"} >
+                                <a className="nav-item" href='#/Contact'>
                                         Contact
                                 </a>
                             </li>
 
-                        <div className="px-3 li-item">
-                            <button className="comp-button" onClick={() => router.push('/cv.pdf')}>
+                        <div className={stickyClass === "sticky" ? "sticky-item px-3 li-item btn" : "btn pb-5 px-3"}>
+                            <button className="primary-button" onClick={() => router.push('/cv.pdf')}>
                                 Resume
                             </button>
                         </div>

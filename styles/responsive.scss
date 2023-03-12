@@ -8,9 +8,15 @@
 
   @media screen and (max-width: 767px) {
 
+    .burger-menu {
+        padding-bottom: 10px;
+    }
+
     .BurgerMenu {
 
         transition: .3s linear;
+        padding-bottom: 20px;
+
 
     }
     .burger {
@@ -18,21 +24,20 @@
         padding-bottom: 10px;
         padding-top: 10px;
 
+        li {
+            width: 100%;
+            text-align: center;
+        }
+        .btn {
+            text-align: center;
+            margin: 0 auto;
+        }
+
   }
 
 
-    .nav-item {
-        width: 100%;
-    }
-
-
-    .li-item {
-        align-self: center;
-        align-content: center;
-        text-align: center;
-        margin: 0 auto;
-        padding: 20px;
-        width: 100%;
+    .img-logo {
+        padding: 30px;
     }
 
 }

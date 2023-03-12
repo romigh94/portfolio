@@ -4,23 +4,27 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .burger-menu {
+    padding-bottom: 10px;
+  }
   .BurgerMenu {
     transition: 0.3s linear;
+    padding-bottom: 20px;
   }
   .burger {
     background-color: black;
     padding-bottom: 10px;
     padding-top: 10px;
   }
-  .nav-item {
+  .burger li {
     width: 100%;
+    text-align: center;
   }
-  .li-item {
-    align-self: center;
-    align-content: center;
+  .burger .btn {
     text-align: center;
     margin: 0 auto;
-    padding: 20px;
-    width: 100%;
+  }
+  .img-logo {
+    padding: 30px;
   }
 }

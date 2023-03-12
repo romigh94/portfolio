@@ -2,16 +2,19 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='bg-black'>
-    <div className='about-container mx-auto text-center text-white' id="/About">
+    <div className='about-outer-container'>
+    <div className='about-container mx-auto text-center' id="/About">
+
+        <h1 className='text-center'>About me</h1>
+        
+        <div className='row first-row pt-3'>
+
+        <div className='col-md'>
 
 
-        <div className='pb-5'>
-            <h1>About me</h1>
-        </div>
 
-        <div className='pb-5'>
-            <img src="/images/profile-img.jpg" className='profile-img' />
+        <div className='pb-5 pt-5 text-center'>
+            <img src="/images/profile-image.jpg" className='profile-img' />
         </div>
             <p className='pt-3'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -21,10 +24,16 @@ const About = () => {
                 non luctus. Cras ullamcorper lectus eu nibh.
             </p>
 
+            <button className='primary-button'>Contact</button>
+            </div>
 
-            <h3 className='pt-5'>Some technologies I've worked with:</h3> 
+            <div className='col-md'>
 
-                <div className='row pt-3'>
+        
+            <div className='row second-row'>
+
+            <h4 className='pt-5'>Some technologies I've worked with:</h4> 
+
                     <div className='col-xs-4 col-sm-2 col-md-2 px-2'>
                         <img src="/icons/html.png" />
                     </div>
@@ -36,7 +45,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className='row'>
+                <div className='row second-row'>
 
                     <div className='col-xs-4 col-sm-2 col-md-2 pt-3 px-2'>
                         <img src="/icons/node.png" />
@@ -51,7 +60,7 @@ const About = () => {
 
                 </div>
 
-                <div className='row'>
+                <div className='row second-row'>
                     <div className='col-xs-4 col-sm-2 col-md-2 pt-4'>
                         <img src="/icons/nextjs.png"/>
                     </div>
@@ -59,11 +68,11 @@ const About = () => {
                         <img src="/icons/mongodb.png" />
                     </div>
                     <div className='col-xs-4 col-sm-2 col-md-2 px-2'>
-                        <img src="/icons/github.png" />
+                        <img src="/icons/black_github.png" />
                     </div>
                 </div>
 
-                <div className='row me-auto ps-3'>
+                <div className='row second-row ps-3'>
                     <div className='col-xs-4 px-2'>
                         <img src="/icons/bootstrap.png" />
                     </div>
@@ -74,11 +83,10 @@ const About = () => {
                         <img src="/icons/heroku.png" />
                     </div>
                     
+                    </div>
                 </div>
-
-
             </div>
-
+        </div>
     </div>
   )
 }

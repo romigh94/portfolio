@@ -1,8 +1,14 @@
+import { useRouter } from "next/router"
+
 const Mainbanner = () => {
+
+    const router = useRouter()
+
+
     return (
       <div className='imgbanner-container'>
   
-      <img src="/images/hero-banner.jpg" alt='Image' />
+      <img src="/images/hero-banner.png" alt='Image' />
   
   
           <div className='img-caption text-center mx-auto'>
@@ -12,13 +18,13 @@ const Mainbanner = () => {
               </h1>
 
               <p>I’m a soon to be frontend developer from Sweden. 
-                During my education I have learned to build and design software.
+                During my education I have learned to build and design software with different technologies.
                 It's a big passion for me.</p>
-
   
                       <div className="pt-3">
                           <button 
                               className='primary-button'
+                              onClick={() => router.push('https://github.com/romigh94')}
                               >
                               Check out my Github
                           </button>
