@@ -51,7 +51,7 @@ const Contact = () => {
 
         <h1 className='text-center'>Contact me here</h1>
 
-        <p className="text-center pb-5">Feel free to Contact me by submitting this form below and I will get back to you as soon as possible</p>
+        <p className="text-center pb-5">Feel free to Contact me by submitting this form below OR e-mail me and I will get back to you as soon as possible</p>
 
         <div className='contact-inner-container'>
             <form className='inside-inner-container' onSubmit={handleSubmit}>
