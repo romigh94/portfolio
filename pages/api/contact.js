@@ -8,7 +8,11 @@ const transport = {
     }
 }
 
+
 const mailer = nodemailer.createTransport(sendgridTransport(transport))
+
+//mailer(sendgridTransport(transport))
+
 
 export default async (req, res) => {
     console.log(req.body)

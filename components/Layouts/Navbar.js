@@ -93,7 +93,7 @@ const Navbar = () => {
                                 </a>
                             </li>
 
-                        <div className={stickyClass === "sticky" ? "sticky-item px-3 li-item btn" : "btn pb-5 px-3"}>
+                        <div className={stickyClass === "sticky" ? "sticky-item px-3 li-item" : "resume-btn px-3"}>
                             <button className="primary-button" onClick={() => router.push('/cv.pdf')}>
                                 Resume
                             </button>

@@ -35,6 +35,7 @@ button {
 
 .primary-button {
     background-color: $primary;
+    border-radius: 30px;
 }
 
 .secondary-button {
@@ -129,7 +130,9 @@ ul {
 }
 
 
-
+.resume-btn {
+    padding-bottom: 50px;
+}
 
 .sticky {
     position: fixed;

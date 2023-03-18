@@ -24,6 +24,7 @@ button {
 
 .primary-button {
   background-color: #00B2CA;
+  border-radius: 30px;
 }
 
 .secondary-button {
@@ -101,6 +102,10 @@ ul {
 
 .nav-item:hover {
   color: #00B2CA;
+}
+
+.resume-btn {
+  padding-bottom: 50px;
 }
 
 .sticky {

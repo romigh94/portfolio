@@ -1,10 +1,7 @@
 import { useState } from "react"
-import { useRouter } from "next/router"
 import axios from "axios"
 
-
 const Contact = () => {
-
 
     const [formvalues, setformValues] = useState({
         name: "",
@@ -14,7 +11,6 @@ const Contact = () => {
 
     const [errorMsg, setErrorMsg] = useState(false)
     const [success, setSuccess] = useState(false)
-    const router = useRouter()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -51,13 +47,14 @@ const Contact = () => {
 
         <h1 className='text-center'>Contact me here</h1>
 
-        <p className="text-center pb-5">Feel free to Contact me by submitting this form below OR e-mail me and I will get back to you as soon as possible</p>
+        <p className="text-center pb-5">Feel free to Contact me by submitting this form below OR <br/>
+         <a className="ps-1" href="mailto:rominaa.ghaderi94@gmail.com">e-mail me</a> and I will get back to you as soon as possible</p>
 
         <div className='contact-inner-container'>
             <form className='inside-inner-container' onSubmit={handleSubmit}>
 
                 {errorMsg ?
-                <div className="alert alert-danger">
+                <div className="alert alert-danger p-3">
                     <p>{errorMsg}</p>
                 </div> 
                 :
@@ -65,7 +62,7 @@ const Contact = () => {
                 }
 
                 {success ?
-                <div className="alert alert-success">
+                <div className="alert alert-success p-3">
                     <p>{success}</p>
                 </div> 
                 :
