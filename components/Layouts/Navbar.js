@@ -49,22 +49,22 @@ const Navbar = () => {
         <div className='inner-container'>
             <nav className='navbar navbar-expand-md'>
 
-            <div className={stickyClass === "sticky" ? "img-logo pb-4 ps-5" : "img-logo pb-5 ps-5"}>
-                <a href='/'>
+            <div className={stickyClass === "sticky" ? "img-logo pb-4 ps-3" : "img-logo pb-5 ps-3"}>
+                <a href='#'>
                         <img src="/icons/RG.svg" />
                 </a>
             </div>
                 
-                <div className='pb-3 pe-3' onClick={(e) => e.preventDefault()}>
+                <div onClick={(e) => e.preventDefault()}>
                         <a 
                             href="#"
                             onClick={() => setSelected(!selected)} 
                             className="BurgerMenu">
                             {selected === false ? 
 
-                            <img 
-                            src='/icons/burgermenu.svg' width={30}/> 
-                            : <img src='/icons/cross.svg' width={30} />}
+                            <img className="me-2 mb-4"
+                            src='/icons/burgermenu.svg' width={20}/> 
+                            : <img className="me-3 mb-4" src='/icons/cross.svg' width={20} />}
 
                         </a>
 

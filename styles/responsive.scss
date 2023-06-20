@@ -8,9 +8,6 @@
 
   @media screen and (max-width: 767px) {
 
-    .burger-menu {
-        padding-bottom: 10px;
-    }
 
     .BurgerMenu {
 
@@ -21,23 +18,25 @@
     }
     .burger {
         background-color: black;
+        position: absolute;
+        top: 80px;
         padding-bottom: 10px;
         padding-top: 10px;
 
+        a {
+            text-decoration: none;
+            color: white;
+            
+            transition: color 0.3s ease;
+            padding: 10px;
+        }
+
         li {
             width: 100%;
-            text-align: center;
-        }
-        .btn {
-            text-align: center;
-            margin: 0 auto;
+            padding: 10px;
         }
 
   }
 
-
-    .img-logo {
-        padding: 30px;
-    }
 
 }

@@ -12,7 +12,16 @@ $body-font: K2D;
 
 *{
     max-width: 100%;
+    max-height: 100%;
 }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior-y: contain; /* Prevent overscroll behavior */
+  }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;
@@ -106,6 +115,7 @@ ul {
 .logo:hover {
     color: white;
 }
+
 
 
 .navbar-container {

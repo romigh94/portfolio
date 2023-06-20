@@ -82,6 +82,9 @@ const About = () => {
                     <div className='col-xs-4 px-2'>
                         <img src="/icons/heroku.png" />
                     </div>
+                    <div className='col-xs-4 px-2'>
+                        <img src="/icons/vue.png" />
+                    </div>
                     
                     </div>
                 </div>

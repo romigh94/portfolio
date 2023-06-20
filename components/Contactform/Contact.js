@@ -70,7 +70,6 @@ const Contact = () => {
                 }
                 
                 <div className='pb-3'>
-                    <label>Name</label>
                     <input 
                         type="text" 
                         placeholder='Enter your name here' 
@@ -80,7 +79,6 @@ const Contact = () => {
                 </div>
 
                 <div className='pb-3'>
-                    <label>E-mail</label>
                     <input 
                         type="text" 
                         placeholder='Enter your e-mail here' 
@@ -89,7 +87,6 @@ const Contact = () => {
                         onChange={handleChange}/>
                 </div>
                 <div>
-                    <label>Message</label>
                     <textarea 
                         type="text" 
                         rows="8" 
