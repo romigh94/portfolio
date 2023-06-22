@@ -17,11 +17,11 @@ const About = () => {
             <img src="/images/profile-image.jpg" className='profile-img' />
         </div>
             <p className='pt-3'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed vitae velit mauris. Aenean nunc odio, porta ac tincidunt aliquet, 
-                aliquam ac lacus. Morbi et magna vitae leo consequat pretium. 
-                Nam accumsan finibus sem finibus feugiat. Maecenas accumsan lacinia urna 
-                non luctus. Cras ullamcorper lectus eu nibh.
+            
+            I'm a 28 year old IT geek who has a big passion for web development and webdesign. 
+            Recently, in June 2023, I graduated as a frontend developer from Jensen Yrkeshögskola in Kista. 
+            When I'm not coding, I cherish quality time spent with friends and family. 
+
             </p>
 
             <button className='primary-button'>Contact</button>
