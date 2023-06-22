@@ -1,6 +1,10 @@
 import React from 'react'
+import { useRouter } from 'next/router'
 
 const About = () => {
+
+const router = useRouter()
+
   return (
     <div className='about-outer-container'>
     <div className='about-container mx-auto text-center' id="/About">
@@ -24,7 +28,7 @@ const About = () => {
 
             </p>
 
-            <button className='primary-button'>Contact</button>
+            <button className='primary-button' onClick={() => router.push('#/Contact')}>Contact me</button>
             </div>
 
             <div className='col-md'>
