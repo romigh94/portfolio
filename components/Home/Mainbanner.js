@@ -17,7 +17,7 @@ const Mainbanner = () => {
                   Hi, my name is Romina
               </h1>
 
-              <p>I’m a soon to be frontend developer from Sweden. 
+              <p>I’m a Fullstack developer from Sweden. 
                 During my education I have learned to build and design software with different technologies.
                 It's a big passion for me.</p>
   
