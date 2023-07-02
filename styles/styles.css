@@ -55,6 +55,10 @@ ul {
 }
 
 /* --------------- HOME --------------- */
+.overflowY {
+  overflow: visible;
+}
+
 .imgbanner-container {
   height: 100vh;
 }
@@ -95,7 +99,7 @@ ul {
   width: 100%;
   z-index: 20;
   color: white;
-  position: fixed;
+  position: absolute;
   height: 110px;
 }
 .navbar-container img {
@@ -120,7 +124,7 @@ ul {
   top: 0;
   width: 100%;
   color: white;
-  background-color: #09264E;
+  background-color: black;
   height: 80px;
   z-index: 2;
   transition: 0.4s ease-out;
