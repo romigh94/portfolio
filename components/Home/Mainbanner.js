@@ -4,23 +4,6 @@ import { useEffect } from "react";
 const Mainbanner = () => {
 
     const router = useRouter()  
-    
-    useEffect(() => {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        var scrollHeight = document.documentElement.scrollHeight;
-        var clientHeight = document.documentElement.clientHeight;
-      
-        if (scrollTop === 0) {
-          // Scrolled to the top of the page
-          document.body.style.overflowY = "hidden";
-        } else if (scrollTop + clientHeight >= scrollHeight) {
-          // Scrolled to the bottom of the page
-          document.body.style.overflowY = "hidden";
-        } else {
-          // Scrolling within the page
-          document.body.style.overflowY = "scroll";
-        }
-      }, []);
 
 
 
