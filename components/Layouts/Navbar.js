@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className='inner-container'>
             <nav className='navbar navbar-expand-md'>
 
-            <div className={stickyClass === "sticky" ? "img-logo pb-4 ps-3 pt-3" : "img-logo pt-3 pb-5 ps-3"}>
+            <div className={stickyClass === "sticky" ? "img-logo pb-4 ps-3 pt-1" : "img-logo pt-3 pb-5 ps-3"}>
                 <a href='#'>
                         <img src="/icons/RG.svg" />
                 </a>
