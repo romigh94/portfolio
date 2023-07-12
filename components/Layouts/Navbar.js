@@ -5,7 +5,6 @@ const Navbar = () => {
 
     const router = useRouter()
 
-    const [stickyClass, setStickyClass] = useState('navbar-container')
     const [selected, setSelected] = useState(false)
 
 
@@ -17,39 +16,12 @@ const Navbar = () => {
 
 
 
-
-            const stickyNavbar = () => {
-                if (window !== undefined) {
-                    let screenHeight = window.scrollY
-                    
-                    if (screenHeight > 100) {
-                        setStickyClass('sticky')
-                    } else {
-                        setStickyClass('navbar-container')
-                    }
-        
-                }
-            }
-
-
-
-            useEffect(() => {
-
-                window.addEventListener('scroll', stickyNavbar)
-        
-                return () => {
-                    window.removeEventListener('scroll', stickyNavbar)
-                }
-        
-            }, [])
-
-
   return (
-<div className={stickyClass}>
+<div className="navbar-container">
         <div className='inner-container'>
             <nav className='navbar navbar-expand-md'>
 
-            <div className={stickyClass === "sticky" ? "img-logo pb-4 ps-3 pt-1" : "img-logo pt-3 pb-5 ps-3"}>
+            <div className="img-logo pt-3 pb-5 ps-3">
                 <a href='#'>
                         <img src="/icons/RG.svg" />
                 </a>
@@ -71,9 +43,9 @@ const Navbar = () => {
                 </div>
 
                 <div className={collapse}>
-                    <ul className={stickyClass === "sticky" ? 'ms-auto navbar text-white' : 'ms-auto navbar text-white pt-4'}>
+                    <ul className='ms-auto navbar text-white pt-4'>
                         
-                            <li className={stickyClass === "sticky" ? "sticky-item px-3" : "pb-5 px-3"}>
+                            <li className="pb-5 px-3">
                                 <a className="nav-item" href="#/About">
                                         About
                                 </a>
@@ -81,19 +53,19 @@ const Navbar = () => {
                             
                            
 
-                            <li className={stickyClass === "sticky" ? "sticky-item px-3" : "pb-5 px-3"}>
+                            <li className="pb-5 px-3">
                                 <a className="nav-item" href='#/Work'>
                                         Work
                                 </a>
                             </li>
 
-                            <li className={stickyClass === "sticky" ? "sticky-item px-3" : "pb-5 px-3"} >
+                            <li className="pb-5 px-3" >
                                 <a className="nav-item" href='#/Contact'>
                                         Contact
                                 </a>
                             </li>
 
-                        <div className={stickyClass === "sticky" ? "sticky-item px-3 li-item" : "resume-btn px-3"}>
+                        <div className="resume-btn px-3">
                             <button className="primary-button" onClick={() => router.push('/cv.pdf')}>
                                 Resume
                             </button>
