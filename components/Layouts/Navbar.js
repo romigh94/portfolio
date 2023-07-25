@@ -11,7 +11,7 @@ const Navbar = () => {
             const collapse = 
                     selected === false 
                     ? 
-                    'collapse navbar-collapse ' 
+                    'collapse navbar-collapse' 
                     : 'collapse navbar-collapse show burger';
 
 
@@ -27,16 +27,16 @@ const Navbar = () => {
                 </a>
             </div>
                 
-                <div onClick={(e) => e.preventDefault()}>
+                <div className="burger-icon-container" onClick={(e) => e.preventDefault()}>
                         <a 
                             href="#"
                             onClick={() => setSelected(!selected)} 
                             className="BurgerMenu">
                             {selected === false ? 
 
-                            <img className="me-2 mb-4"
-                            src='/icons/burgermenu.svg' width={20}/> 
-                            : <img className="me-3 mb-4" src='/icons/cross.svg' width={20} />}
+                            <img
+                            src='/icons/burgermenu.svg' width={25}/> 
+                            : <img className="me-3 mb-4 cross-icon" src='/icons/cross.svg' width={30} />}
 
                         </a>
 

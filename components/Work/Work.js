@@ -10,29 +10,26 @@ const router = useRouter()
         <div className='work-container' id="/Work">
             <h1 className='text-center pb-5'>Some things I've built</h1>
 
-
-        <div className='row'>
-            <div className='col-md px-2' onClick={() => router.push('http://sundhundsveterinar.se/')}>
+            <div className="row">
+            <div className='col-md px-2' onClick={() => router.push('https://github.com/romigh94/e-commerce-app')}>
                 <div className="img-wrapper">
-                    <img className="portfolio-Image" src="/images/Clinic-work.png" />
+                    <img className="portfolio-Image" src="/images/e-commerce-app.png" />
                     <div className='img-content'>
-                        <h5>Project at my internship in Webbfabriken</h5>
-                        <h3>Vetenerian clinic</h3>
-                        <p>Nextjs, Bootstrap, Sass</p>
+                        <h5>Side project</h5>
+                        <h3>E-commerce app</h3>
+                        <p>Reactjs, CSS</p>
                     </div>
-                </div>
+                 </div>
             </div>
-
-
-            <div className='col-md px-2' onClick={() => router.push('http://www.cryosec.se/')}>
+            <div className='col-md px-2' onClick={() => router.push('https://github.com/romigh94/weather-app')}>
                 <div className="img-wrapper">
-                    <img className="portfolio-Image" src="/images/Example-work.png" />
+                    <img className="portfolio-Image" src="/images/weather-app.png" />
                     <div className='img-content'>
-                        <h5>Project at my internship in Webbfabriken</h5>
-                        <h3>Example project</h3>
-                        <p>Nextjs, Nodejs, Bootstrap, Sass</p>
+                        <h5>Side project</h5>
+                        <h3>Weather app</h3>
+                        <p>Reactjs, CSS</p>
                     </div>
-                </div>
+                 </div>
             </div>
 
         </div>

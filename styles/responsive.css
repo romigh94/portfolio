@@ -8,21 +8,46 @@
     transition: 0.3s linear;
     padding-bottom: 20px;
   }
-  .burger {
-    background-color: black;
+  .cross-icon {
+    z-index: 20;
+    position: fixed;
+    right: 20px;
+  }
+  .burger-icon-container {
     position: absolute;
-    top: 80px;
+    right: 30px;
+    top: 20px;
+  }
+  .burger {
+    background-color: #000;
+    position: fixed;
+    text-align: center;
+    height: 100vh;
+    top: 0px;
     padding-bottom: 10px;
     padding-top: 10px;
   }
   .burger a {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
+    position: fixed;
+    font-size: 30px;
+    margin-top: 20px;
     transition: color 0.3s ease;
-    padding: 10px;
   }
-  .burger li {
+  .burger li, .burger .resume-btn {
     width: 100%;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  .burger button {
+    border: none;
+    color: white;
+    padding: 10px 60px;
+    font-size: 30px;
+    border: none;
+    border-radius: 30px;
   }
 }
