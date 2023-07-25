@@ -46,7 +46,7 @@ const Navbar = () => {
                     <ul className='ms-auto navbar text-white pt-4'>
                         
                             <li className="pb-5 px-3">
-                                <a className="nav-item" href="#/About">
+                                <a className="nav-item" onClick={() => setSelected(!selected)} href="#/About">
                                         About
                                 </a>
                             </li>
@@ -54,13 +54,13 @@ const Navbar = () => {
                            
 
                             <li className="pb-5 px-3">
-                                <a className="nav-item" href='#/Work'>
+                                <a className="nav-item" onClick={() => setSelected(!selected)} href='#/Work'>
                                         Work
                                 </a>
                             </li>
 
                             <li className="pb-5 px-3" >
-                                <a className="nav-item" href='#/Contact'>
+                                <a className="nav-item" onClick={() => setSelected(!selected)} href='#/Contact'>
                                         Contact
                                 </a>
                             </li>
