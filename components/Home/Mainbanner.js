@@ -24,13 +24,15 @@ const Mainbanner = () => {
                 During my education I have learned to build and design software with different technologies.
                 It's a big passion for me.</p>
   
-                      <div className="pt-3">
+                      <div className="pt-3 d-flex justify-content-center">
+                        <div className="px-2">
                           <button 
                               className='primary-button'
                               onClick={() => router.push('https://github.com/romigh94')}
                               >
-                              Check out my Github
+                              Contact me here
                           </button>
+                          </div>
                       </div>
   
           </div>

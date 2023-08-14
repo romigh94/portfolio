@@ -28,7 +28,7 @@ const router = useRouter()
 
             </p>
 
-            <button className='primary-button' onClick={() => router.push('#/Contact')}>Contact me</button>
+            <button className='primary-button' onClick={() => router.push('#/Contact')}>Contact me here</button>
             </div>
 
             <div className='col-md mt-5'>

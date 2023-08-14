@@ -66,7 +66,7 @@ const Navbar = () => {
                             </li>
 
                         <div className="resume-btn px-3">
-                            <button className="primary-button" onClick={() => router.push('/cv.pdf')}>
+                            <button className="comp-button" onClick={() => router.push('/cv.pdf')}>
                                 Resume
                             </button>
                         </div>

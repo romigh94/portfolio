@@ -24,7 +24,13 @@ button {
 }
 
 .primary-button {
-  background-color: #00B2CA;
+  background-color: #019eb3;
+  border-radius: 30px;
+}
+
+.primary-outline-button {
+  background-color: transparent;
+  border: 2px solid #019eb3;
   border-radius: 30px;
 }
 
@@ -82,7 +88,7 @@ ul {
 /* ---------------- NAVBAR ------------------- */
 .logo {
   font-size: 100px;
-  color: #00B2CA;
+  color: #019eb3;
 }
 
 .logo:hover {
@@ -106,7 +112,7 @@ ul {
 }
 
 .nav-item:hover {
-  color: #00B2CA;
+  color: #019eb3;
 }
 
 .resume-btn {
@@ -186,7 +192,7 @@ ul {
   transition: 500ms ease-in-out;
 }
 .img-wrapper h5 {
-  color: #00B2CA;
+  color: #019eb3;
 }
 
 .img-wrapper:hover {
@@ -235,7 +241,7 @@ footer .footer-inner-container {
   padding-top: 30px;
 }
 footer h1 {
-  color: #00B2CA;
+  color: #019eb3;
   font-weight: bold;
 }
 footer .copyright-container {
@@ -250,6 +256,6 @@ footer a {
   color: white;
 }
 footer a:hover {
-  color: #00B2CA;
+  color: #019eb3;
   text-decoration: underline;
 }

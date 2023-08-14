@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 
-$primary: #00B2CA;
+$primary: #019eb3;
 $secondary: #09264E;
 $comp: #5900CA;
 
@@ -39,6 +39,12 @@ button {
 
 .primary-button {
     background-color: $primary;
+    border-radius: 30px;
+}
+
+.primary-outline-button {
+    background-color: transparent;
+    border: 2px solid $primary;
     border-radius: 30px;
 }
 
