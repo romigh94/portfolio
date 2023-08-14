@@ -31,66 +31,88 @@ const router = useRouter()
             <button className='primary-button' onClick={() => router.push('#/Contact')}>Contact me</button>
             </div>
 
-            <div className='col-md'>
+            <div className='col-md mt-5'>
 
         
             <div className='row second-row'>
 
             <h4 className='pt-5'>Some technologies I've worked with:</h4> 
 
-                    <div className='col-xs-4 col-sm-2 col-md-2 px-2'>
-                        <img src="/icons/html.png" />
+                    <div className='pt-3 col-md px-2'>
+                        <div className='skill-container'>
+                            HTML
+                        </div>
                     </div>
-                    <div className='col-xs-4 col-sm-2 col-md-2 px-2'>
-                        <img src="/icons/css.png" />
+                    <div className='pt-3 col-md  px-2'>
+                        <div className='skill-container'>
+                            CSS/Sass
+                        </div>
                     </div>
-                    <div className='col-xs-4 col-sm-2 col-md-2 pt-3 px-2'>
-                        <img src="/icons/javascript.png" />
+                    <div className='pt-3 col-md px-2'>
+                        <div className='skill-container'>
+                            JavaScript
+                        </div>
                     </div>
                 </div>
 
                 <div className='row second-row'>
 
-                    <div className='col-xs-4 col-sm-2 col-md-2 pt-3 px-2'>
-                        <img src="/icons/node.png" />
+                    <div className='col-md px-2 pt-3'>
+                        <div className='skill-container'>
+                        NodeJS
+                        </div>
                     </div>
-                    <div className='col-xs-4 col-sm-2 col-md-2 p-3'> 
-                        <img src="/icons/figma.png" />
+                    <div className='col-md px-2 pt-3'> 
+                        <div className='skill-container'>    
+                        Figma
+                        </div>
                     </div>
 
-                    <div className='col-xs-4 col-sm-2 col-md-2 pt-3 px-2'>
-                        <img src="/icons/reactjs.png" />
+                    <div className='col-md px-2 pt-3'>
+                        <div className='skill-container'>
+                        React.js
+                        </div>
                     </div>
 
                 </div>
 
                 <div className='row second-row'>
-                    <div className='col-xs-4 col-sm-2 col-md-2 pt-4'>
-                        <img src="/icons/nextjs.png"/>
+                    <div className='col-md px-2 pt-3'>
+                        <div className='skill-container'>
+                        Next.js
+                        </div>
                     </div>
-                    <div className='col-xs-4 col-sm-2 col-md-2 px-2'>
-                        <img src="/icons/mongodb.png" />
+                    <div className='col-md px-2 pt-3'>
+                        <div className='skill-container'>
+                        Vue.js
+                        </div>
                     </div>
-                    <div className='col-xs-4 col-sm-2 col-md-2 px-2'>
-                        <img src="/icons/black_github.png" />
+                    <div className='col-md px-2 pt-3'>
+                        <div className='skill-container'>
+                        MongoDB
+                        </div>
                     </div>
                 </div>
 
-                <div className='row second-row ps-3'>
-                    <div className='col-xs-4 px-2'>
-                        <img src="/icons/bootstrap.png" />
+                <div className='row second-row'>
+                    <div className='col-md px-2 pt-3'>
+                        <div className='skill-container'>
+                        Bootstrap
+                        </div>
                     </div>
-                    <div className='col-xs-4 px-2'>
-                        <img src="/icons/sass.png" />
+                    <div className='col-md px-2 pt-3'>
+                        <div className='skill-container'>
+                        Github
+                        </div>
                     </div>
-                    <div className='col-xs-4 px-2'>
-                        <img src="/icons/heroku.png" />
+                    <div className='col-md mx-2 mt-3'>
+                        <div className='skill-container'>
+                        Heroku
+                        </div>
                     </div>
-                    <div className='col-xs-4 px-2'>
-                        <img src="/icons/vue.png" />
-                    </div>
-                    
-                    </div>
+
+                </div>
+                
                 </div>
             </div>
         </div>

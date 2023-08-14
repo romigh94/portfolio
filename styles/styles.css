@@ -131,22 +131,28 @@ ul {
   width: 500px;
   margin: 0 auto;
 }
-.about-container .col-xs-4 {
-  width: 100px;
-  margin: 0 auto;
-  padding: 6px;
+.about-container .skill-container {
+  font-size: 20px;
+  padding: 10px 20px;
+  background: lightgrey;
+  border-radius: 30px;
 }
 
 /* ----------- WORK ------------ */
 .work-container {
   margin: 0 auto;
-  text-align: center;
   width: 1200px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.work-container .text-container img {
+  width: 50px;
+}
 .work-container .card {
   width: 500px;
+}
+.work-container img {
+  text-align: center;
 }
 .work-container h3 {
   color: white;
@@ -172,6 +178,9 @@ ul {
   background: #09264E;
   align-items: center;
   opacity: 0;
+}
+.img-wrapper .img-content img {
+  width: 100px;
 }
 .img-wrapper .portfolio-Image, .img-wrapper .img-content {
   transition: 500ms ease-in-out;
