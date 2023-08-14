@@ -154,6 +154,10 @@ ul {
 .work-container .text-container img {
   width: 50px;
 }
+.work-container .text-container img:hover {
+  filter: 110%;
+  cursor: pointer;
+}
 .work-container .card {
   width: 500px;
 }
