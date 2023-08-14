@@ -33,19 +33,19 @@ button {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 
 .primary-button {
     background-color: $primary;
-    border-radius: 30px;
+    //border-radius: 10px;
 }
 
 .primary-outline-button {
     background-color: transparent;
     border: 2px solid $primary;
-    border-radius: 30px;
+    //border-radius: 30px;
 }
 
 .secondary-button {

@@ -20,18 +20,16 @@ button {
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .primary-button {
   background-color: #019eb3;
-  border-radius: 30px;
 }
 
 .primary-outline-button {
   background-color: transparent;
   border: 2px solid #019eb3;
-  border-radius: 30px;
 }
 
 .secondary-button {
@@ -155,7 +153,6 @@ ul {
   width: 50px;
 }
 .work-container .text-container img:hover {
-  filter: 110%;
   cursor: pointer;
 }
 .work-container .card {
