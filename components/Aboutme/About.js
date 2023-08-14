@@ -112,6 +112,25 @@ const router = useRouter()
                     </div>
 
                 </div>
+
+                <div className='row second-row'>
+                    <div className='col-md px-2 pt-3'>
+                        <div className='skill-container'>
+                        Responsive design
+                        </div>
+                    </div>
+                    <div className='col-md px-2 pt-3'>
+                        <div className='skill-container'>
+                        REST API
+                        </div>
+                    </div>
+                    <div className='col-md mx-2 mt-3'>
+                        <div className='skill-container'>
+                        Agile workflows
+                        </div>
+                    </div>
+
+                </div>
                 
                 </div>
             </div>

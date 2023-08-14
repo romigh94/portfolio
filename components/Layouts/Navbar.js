@@ -21,10 +21,8 @@ const Navbar = () => {
         <div className='inner-container'>
             <nav className='navbar navbar-expand-md'>
 
-            <div className="img-logo pt-3 pb-5 ps-3">
-                <a href='#'>
-                        <img src="/icons/RG.svg" />
-                </a>
+            <div className="logo">
+                    RG
             </div>
                 
                 <div className="burger-icon-container" onClick={(e) => e.preventDefault()}>
@@ -65,11 +63,11 @@ const Navbar = () => {
                                 </a>
                             </li>
 
-                        <div className="resume-btn px-3">
-                            <button className="comp-button" onClick={() => router.push('/cv.pdf')}>
-                                Resume
-                            </button>
-                        </div>
+                            <li className="pb-5 px-3" >
+                                <a className="nav-item" onClick={() => router.push('/cv.pdf')} href='#/Contact'>
+                                        Resume
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </nav>

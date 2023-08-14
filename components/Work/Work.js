@@ -21,7 +21,7 @@ const router = useRouter()
             </div>
             <div className='col-md px-5 d-flex align-items-center'>
                 <div className="text-container">
-                    <h2>Web agency</h2>
+                    <h4>Web agency</h4>
                     <p>This is a side project that I'm still working on. 
                         This app contains a contact form and content about the agency. 
                         I'm developing this app with Vue.js and designing it with CSS and Sass. 
@@ -43,7 +43,7 @@ const router = useRouter()
             </div>
             <div className='col-md px-5 d-flex align-items-center'>
                 <div className="text-container">
-                    <h2>E-commerce app</h2>
+                    <h4>E-commerce app</h4>
                     <p>This was a side project where I developed a e-commerce app. 
                     This app contains a list of products where you can add them to a 
                     shopping cart where you can delete the products or add some more.
@@ -66,7 +66,7 @@ const router = useRouter()
 
             <div className='col-md px-5 d-flex align-items-center'>
                 <div className="text-container">
-                <h2>Weather app</h2>
+                <h4>Weather app</h4>
                 <p>This was a side project where I developed a Weather app. This app contains a search bar where you can search for different cities and countries.
                    I developed this with a API and a filter function with help of Reactjs. I designed the app with CSS.  
                 </p>
@@ -86,9 +86,9 @@ const router = useRouter()
             </div>
             <div className='col-md px-5 d-flex align-items-center'>
                 <div className="text-container">
-                    <h2>
+                    <h4>
                         Service agency
-                    </h2>
+                    </h4>
                     <p>This was a group project at my school. We developed a service agency where you could search for different
                         services, login to your own account, sign up, look for different categories etc. We created our own database in MongoDB, 
                         and developed this site with help of: Reactjs, CSS and Nodejs. We used Git actions, deployed it to Heroku and tested different functions it with Jest
@@ -111,7 +111,7 @@ const router = useRouter()
 
             <div className="col-md px-5 d-flex align-items-center">
                 <div className="text-container">
-                <h2>Login/Signup form</h2>
+                <h4>Login/Signup form</h4>
                 <p>
                     This project was a individual project at my school. 
                     I developed a Login/Sign up form containing API, validation and authorization/authentication.
