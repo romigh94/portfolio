@@ -32,110 +32,106 @@ const router = useRouter()
             </div>
 
             <div className='col-md mt-5'>
-
-        
-            <div className='row second-row'>
-
-            <h4 className='pt-5'>Some technologies I've worked with:</h4> 
-
-                    <div className='pt-3 col-md px-2'>
-                        <div className='skill-container'>
-                            HTML
-                        </div>
-                    </div>
-                    <div className='pt-3 col-md  px-2'>
-                        <div className='skill-container'>
-                            CSS/Sass
-                        </div>
-                    </div>
-                    <div className='pt-3 col-md px-2'>
-                        <div className='skill-container'>
-                            JavaScript
-                        </div>
-                    </div>
-                </div>
-
                 <div className='row second-row'>
 
-                    <div className='col-md px-2 pt-3'>
-                        <div className='skill-container'>
-                        NodeJS
+                <h4 className='pt-5'>Some technologies/things I've been working with:</h4> 
+
+                        <div className='pt-3 col-md px-2'>
+                            <div className='skill-container'>
+                                HTML
+                            </div>
                         </div>
-                    </div>
-                    <div className='col-md px-2 pt-3'> 
-                        <div className='skill-container'>    
-                        Figma
+                        <div className='pt-3 col-md  px-2'>
+                            <div className='skill-container'>
+                                CSS/Sass
+                            </div>
+                        </div>
+                        <div className='pt-3 col-md px-2'>
+                            <div className='skill-container'>
+                                JavaScript
+                            </div>
                         </div>
                     </div>
 
-                    <div className='col-md px-2 pt-3'>
-                        <div className='skill-container'>
-                        React.js
+                    <div className='row second-row'>
+
+                        <div className='col-md px-2 pt-3'>
+                            <div className='skill-container'>
+                            NodeJS
+                            </div>
+                        </div>
+                        <div className='col-md px-2 pt-3'> 
+                            <div className='skill-container'>    
+                            Figma
+                            </div>
+                        </div>
+
+                        <div className='col-md px-2 pt-3'>
+                            <div className='skill-container'>
+                            React.js
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className='row second-row'>
+                        <div className='col-md px-2 pt-3'>
+                            <div className='skill-container'>
+                            Next.js
+                            </div>
+                        </div>
+                        <div className='col-md px-2 pt-3'>
+                            <div className='skill-container'>
+                            Vue.js
+                            </div>
+                        </div>
+                        <div className='col-md px-2 pt-3'>
+                            <div className='skill-container'>
+                            MongoDB
+                            </div>
                         </div>
                     </div>
 
-                </div>
+                    <div className='row second-row'>
+                        <div className='col-md px-2 pt-3'>
+                            <div className='skill-container'>
+                            Bootstrap
+                            </div>
+                        </div>
+                        <div className='col-md px-2 pt-3'>
+                            <div className='skill-container'>
+                            Github
+                            </div>
+                        </div>
+                        <div className='col-md mx-2 mt-3'>
+                            <div className='skill-container'>
+                            Heroku
+                            </div>
+                        </div>
 
-                <div className='row second-row'>
-                    <div className='col-md px-2 pt-3'>
-                        <div className='skill-container'>
-                        Next.js
-                        </div>
-                    </div>
-                    <div className='col-md px-2 pt-3'>
-                        <div className='skill-container'>
-                        Vue.js
-                        </div>
-                    </div>
-                    <div className='col-md px-2 pt-3'>
-                        <div className='skill-container'>
-                        MongoDB
-                        </div>
-                    </div>
-                </div>
-
-                <div className='row second-row'>
-                    <div className='col-md px-2 pt-3'>
-                        <div className='skill-container'>
-                        Bootstrap
-                        </div>
-                    </div>
-                    <div className='col-md px-2 pt-3'>
-                        <div className='skill-container'>
-                        Github
-                        </div>
-                    </div>
-                    <div className='col-md mx-2 mt-3'>
-                        <div className='skill-container'>
-                        Heroku
-                        </div>
                     </div>
 
-                </div>
-
-                <div className='row second-row'>
-                    <div className='col-md px-2 pt-3'>
-                        <div className='skill-container'>
-                        Responsive design
+                    <div className='row second-row'>
+                        <div className='col-md px-2 pt-3'>
+                            <div className='skill-container'>
+                            Responsive design
+                            </div>
                         </div>
-                    </div>
-                    <div className='col-md px-2 pt-3'>
-                        <div className='skill-container'>
-                        REST API
+                        <div className='col-md px-2 pt-3'>
+                            <div className='skill-container'>
+                            REST API
+                            </div>
                         </div>
-                    </div>
-                    <div className='col-md mx-2 mt-3'>
-                        <div className='skill-container'>
-                        Agile workflows
+                        <div className='col-md mx-2 mt-3'>
+                            <div className='skill-container'>
+                            Agile workflows
+                            </div>
                         </div>
-                    </div>
-
-                </div>
-                
-                </div>
+                    </div>               
             </div>
         </div>
     </div>
+</div>
   )
 }
 

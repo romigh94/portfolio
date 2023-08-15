@@ -22,10 +22,14 @@ const Navbar = () => {
             <nav className='navbar navbar-expand-md'>
 
             <div className="logo">
+                <a href="/">
                     RG
+                </a>
             </div>
                 
                 <div className="burger-icon-container" onClick={(e) => e.preventDefault()}>
+
+
                         <a 
                             href="#"
                             onClick={() => setSelected(!selected)} 
@@ -42,6 +46,8 @@ const Navbar = () => {
 
                 <div className={collapse}>
                     <ul className='ms-auto navbar text-white pt-4'>
+
+                            
                         
                             <li className="pb-5 px-3">
                                 <a className="nav-item" onClick={() => setSelected(!selected)} href="#/About">

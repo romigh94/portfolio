@@ -14,13 +14,14 @@ const router = useRouter()
             <div className='col-md' onClick={() => router.push('https://github.com/romigh94/freelance-project')}>
                 <div className="img-wrapper">
                     <img className="portfolio-Image" src="/images/Freelance.png" />
-                    <div className='d-flex justify-content-center img-content'>
-                    <img src="/icons/github.png" />
+                    <div className='d-flex flex-column justify-content-center img-content'>
+                    <img src="/icons/eye-icon.svg" />
+                    VIEW PROJECT
                     </div>
                  </div>
             </div>
             <div className='col-md px-5 d-flex align-items-center'>
-                <div className="text-container">
+                <div className="text-container mt-2">
                     <h4>Web agency</h4>
                     <p>This is a side project that I'm still working on. 
                         This app contains a contact form and content about the agency. 
@@ -32,17 +33,18 @@ const router = useRouter()
 
         </div>
 
-            <div className="row">
+            <div className="row pt-3">
             <div className='col-md' onClick={() => router.push('https://github.com/romigh94/e-commerce-app')}>
                 <div className="img-wrapper">
                     <img className="portfolio-Image" src="/images/e-commerce-app.png" />
-                    <div className='d-flex justify-content-center img-content'>
-                    <img src="/icons/github.png" />
+                    <div className='d-flex flex-column justify-content-center img-content'>
+                    <img src="/icons/eye-icon.svg" />
+                    VIEW PROJECT
                     </div>
                  </div>
             </div>
             <div className='col-md px-5 d-flex align-items-center'>
-                <div className="text-container">
+                <div className="text-container mt-2">
                     <h4>E-commerce app</h4>
                     <p>This was a side project where I developed a e-commerce app. 
                     This app contains a list of products where you can add them to a 
@@ -54,18 +56,19 @@ const router = useRouter()
 
         </div>
 
-        <div className="row">
+        <div className="row pt-3">
             <div className='col-md' onClick={() => router.push('https://github.com/romigh94/weather-app')}>
                 <div className="img-wrapper">
                     <img className="portfolio-Image" src="/images/weather-app.png" />
-                    <div className='d-flex justify-content-center img-content'>
-                    <img src="/icons/github.png" />
+                    <div className='d-flex flex-column justify-content-center img-content'>
+                    <img src="/icons/eye-icon.svg" />
+                    VIEW PROJECT
                     </div>
                  </div>
             </div>
 
             <div className='col-md px-5 d-flex align-items-center'>
-                <div className="text-container">
+                <div className="text-container mt-2">
                 <h4>Weather app</h4>
                 <p>This was a side project where I developed a Weather app. This app contains a search bar where you can search for different cities and countries.
                    I developed this with a API and a filter function with help of Reactjs. I designed the app with CSS.  
@@ -79,13 +82,14 @@ const router = useRouter()
             <div className='col-md' onClick={() => router.push('https://github.com/romigh94/Tjanstformedlingssida-FE')}>
                 <div className="img-wrapper">
                     <img className="portfolio-Image" src="/images/Akutraket.png" />
-                    <div className='d-flex justify-content-center img-content'>
-                        <img src="/icons/github.png" />
+                    <div className='d-flex flex-column justify-content-center img-content'>
+                    <img src="/icons/eye-icon.svg" />
+                    VIEW PROJECT
                     </div>
                  </div>
             </div>
             <div className='col-md px-5 d-flex align-items-center'>
-                <div className="text-container">
+                <div className="text-container mt-2">
                     <h4>
                         Service agency
                     </h4>
@@ -103,14 +107,15 @@ const router = useRouter()
         <div className='col-md' onClick={() => router.push('https://github.com/romigh94/Loginmodul')}>
                 <div className="img-wrapper">
                     <img className="portfolio-Image" src="/images/Loginmodul.png" />
-                    <div className='d-flex justify-content-center img-content'>
-                        <img src="/icons/github.png" />
+                    <div className='d-flex flex-column justify-content-center img-content'>
+                    <img src="/icons/eye-icon.svg" />
+                    VIEW PROJECT
                     </div>
                 </div>
             </div>
 
             <div className="col-md px-5 d-flex align-items-center">
-                <div className="text-container">
+                <div className="text-container mt-2">
                 <h4>Login/Signup form</h4>
                 <p>
                     This project was a individual project at my school. 

@@ -26,6 +26,7 @@ button {
 .primary-button {
   background: linear-gradient(90deg, #00B2CA 0%, #09CF83 100%);
   text-transform: uppercase;
+  color: white;
 }
 
 .primary-outline-button {
@@ -35,10 +36,6 @@ button {
 
 .secondary-button {
   background-color: #09264E;
-}
-
-.primary-button:hover, .secondary-button:hover, .comp-button:hover {
-  filter: brightness(110%);
 }
 
 a {
@@ -183,8 +180,9 @@ ul {
 }
 .img-wrapper .portfolio-Image {
   display: inline-block;
-  width: 100%;
+  margin: 0 auto;
   height: 300px;
+  border-radius: 11px;
 }
 .img-wrapper .img-content {
   position: absolute;
@@ -194,8 +192,10 @@ ul {
   padding-left: 5px;
   padding-right: 5px;
   background: #09264E;
+  border-radius: 11px;
   align-items: center;
   opacity: 0;
+  font-size: 20px;
 }
 .img-wrapper .img-content img {
   width: 100px;
@@ -274,9 +274,9 @@ footer a:hover {
 
 @keyframes refresh {
   from {
-    transform: scale(1.5) rotate(0);
+    transform: scale(1.1) rotate(0);
   }
   to {
-    transform: scale(1.5) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
   }
 }

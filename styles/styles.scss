@@ -38,6 +38,10 @@ button {
 .primary-button {
     background: $primary;
     text-transform: uppercase;
+    color: white;
+
+    
+
     //border-radius: 10px;
 }
 
@@ -49,11 +53,6 @@ button {
 
 .secondary-button {
     background-color: $secondary;
-}
-
-
-.primary-button:hover, .secondary-button:hover, .comp-button:hover {
-    filter: brightness(110%);
 }
 
 
@@ -237,9 +236,9 @@ ul {
 
     .portfolio-Image {
         display: inline-block;
-        width: 100%;
+        margin: 0 auto;
         height: 300px;
-      
+        border-radius: 11px;
       }
 
       .img-content {
@@ -250,8 +249,10 @@ ul {
         padding-left: 5px;
         padding-right: 5px;
         background: $secondary;
+        border-radius: 11px;
         align-items: center;
         opacity: 0;
+        font-size: 20px;
 
         img {
             width: 100px;
@@ -362,9 +363,9 @@ footer {
 
 @keyframes refresh {
     from {
-        transform: scale(1.5) rotate(0);
+        transform: scale(1.1) rotate(0);
     }
     to {
-        transform: scale(1.5) rotate(360deg);
+        transform: scale(1.1) rotate(360deg);
     }
 }
