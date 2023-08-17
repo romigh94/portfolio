@@ -15,6 +15,10 @@ $body-font: K2D;
     max-height: 100%;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;
@@ -30,7 +34,6 @@ button {
     border: none;
     color: white;
     padding: 10px 30px;
-    border: none;
     border-radius: 10px;
 }
 
@@ -39,10 +42,7 @@ button {
     background: $primary;
     text-transform: uppercase;
     color: white;
-
-    
-
-    //border-radius: 10px;
+    border-radius: 10px !important;
 }
 
 .primary-outline-button {
@@ -207,12 +207,30 @@ ul {
     padding-bottom: 100px;
 
     .text-container {
-        img {
+        .github-icon {
             width: 50px;
         }
-        img:hover {
+        .github-icon:hover {
             cursor: pointer;
             animation: refresh 1s cubic-bezier(.36,.07,.57,.99) infinite;
+        }
+        .box {
+            padding: 10px 20px;
+            background-color: lightgrey;
+            border-radius: 30px;
+        }
+        a {
+            text-decoration: none;
+            color:black;
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        a:hover {
+            color: $secondary;
+        }
+        .arrow1 {
+            animation: slide1 1s ease-in-out infinite;
         }
     }
 
@@ -233,11 +251,12 @@ ul {
 .img-wrapper {
     overflow: hidden;
     position: relative;
+    text-align: center;
 
     .portfolio-Image {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
         margin: 0 auto;
-        height: 300px;
         border-radius: 11px;
       }
 
@@ -253,9 +272,9 @@ ul {
         align-items: center;
         opacity: 0;
         font-size: 20px;
-
+        
         img {
-            width: 100px;
+            width: 80px;
         }
 
   
@@ -369,3 +388,14 @@ footer {
         transform: scale(1.1) rotate(360deg);
     }
 }
+
+@keyframes slide1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(10px, 0);
+    }
+  }

@@ -5,6 +5,10 @@
   max-height: 100%;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Kanit;
   color: #09264E;
@@ -19,7 +23,6 @@ button {
   border: none;
   color: white;
   padding: 10px 30px;
-  border: none;
   border-radius: 10px;
 }
 
@@ -27,6 +30,7 @@ button {
   background: linear-gradient(90deg, #00B2CA 0%, #09CF83 100%);
   text-transform: uppercase;
   color: white;
+  border-radius: 10px !important;
 }
 
 .primary-outline-button {
@@ -157,12 +161,29 @@ ul {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.work-container .text-container img {
+.work-container .text-container .github-icon {
   width: 50px;
 }
-.work-container .text-container img:hover {
+.work-container .text-container .github-icon:hover {
   cursor: pointer;
   animation: refresh 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.work-container .text-container .box {
+  padding: 10px 20px;
+  background-color: lightgrey;
+  border-radius: 30px;
+}
+.work-container .text-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin: 20px;
+}
+.work-container .text-container a:hover {
+  color: #09264E;
+}
+.work-container .text-container .arrow1 {
+  animation: slide1 1s ease-in-out infinite;
 }
 .work-container .card {
   width: 500px;
@@ -177,11 +198,12 @@ ul {
 .img-wrapper {
   overflow: hidden;
   position: relative;
+  text-align: center;
 }
 .img-wrapper .portfolio-Image {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-  height: 300px;
   border-radius: 11px;
 }
 .img-wrapper .img-content {
@@ -198,7 +220,7 @@ ul {
   font-size: 20px;
 }
 .img-wrapper .img-content img {
-  width: 100px;
+  width: 80px;
 }
 .img-wrapper .portfolio-Image, .img-wrapper .img-content {
   transition: 500ms ease-in-out;
@@ -278,5 +300,13 @@ footer a:hover {
   }
   to {
     transform: scale(1.1) rotate(360deg);
+  }
+}
+@keyframes slide1 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, 0);
   }
 }
