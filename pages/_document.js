@@ -1,6 +1,14 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+import React from 'react'
 
-export default function Document() {
+class MainDoc extends Document {
+
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx)
+    return { ...initialProps}
+  }
+
+  render() {
   return (
     <Html>
       <Head> 
@@ -14,6 +22,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <div id="modal-root"></div>
         <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
@@ -23,3 +32,7 @@ export default function Document() {
     </Html>
   )
 }
+}
+
+
+export default MainDoc

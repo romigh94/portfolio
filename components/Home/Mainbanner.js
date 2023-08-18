@@ -1,5 +1,4 @@
 import { useRouter } from "next/router"
-import { useEffect } from "react";
 
 const Mainbanner = () => {
 
@@ -28,7 +27,7 @@ const Mainbanner = () => {
                         <div className="px-2">
                           <button 
                               className='primary-button'
-                              onClick={() => router.push('https://github.com/romigh94')}
+                              onClick={() => router.push('#/Contact')}
                               >
                               Contact me here
                           </button>

@@ -5,6 +5,7 @@ import Contact from "../components/Contactform/Contact";
 import Footer from "../components/Layouts/Footer";
 
 
+
 export default function Home() {
   return (
     <>
@@ -13,6 +14,8 @@ export default function Home() {
       <Work />
       <Contact />
       <Footer />
+
+
     </>
   )
 }

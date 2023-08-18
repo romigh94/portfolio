@@ -1,12 +1,149 @@
 import { useRouter } from "next/router"
+import { useState } from "react"
+import WorkModal from './WorkModal'
+import Link from "next/link"
+//import Modal from 'react-modal';
+
 
 const Work = () => {
 
+    const router = useRouter()
 
-const router = useRouter()
+    const [showModal, setShowModal] = useState(false)
+    const [modalContent, setModalContent] = useState({
+        title: '',
+        technologies: [],
+        description: '',
+        images: [],
+        links: ''
+    })
+
+
+    const openModal = (title, technologies, description, images, links) => {
+        setModalContent({
+            title,
+            technologies,
+            description,
+            images,
+            links
+        })
+        setShowModal(true)
+    }
+
+    const closeModal = () => {
+        setShowModal(false)
+    }
+
+
+const projects = [
+    {
+        title: 'Web agency',
+        technologies: ['HTML', 'CSS', 'Sass', 'Bootstrap', 'Vue.js'],
+        description: 'This is a side project that I am still working on. This app contains a contact form and content about the agency. I am developing this app with Vue.js and designing it with CSS and Sass.',
+        images: ['/images/Freelance.png'],
+        link: 'https://github.com/romigh94/freelance-project'
+    },
+    {
+        title: 'E-commerce',
+        technologies: ['HTML', 'CSS', 'React.js'],
+        description: 'This was a side project where I developed a e-commerce app. This app contains a list of products where you can add to a shopping cart where you also can delete the products or add some more. I developed this app with Reactjs and designed it with CSS',
+        images: ['/images/e-commerce-app.png'],
+        link: 'https://github.com/romigh94/e-commerce-app'
+    },
+    {
+        title: 'Weather app',
+        technologies: ['HTML', 'CSS', 'React.js'],
+        description: 'This was a side project where I developed a e-commerce app. This app contains a list of products where you can add to a shopping cart where you also can delete the products or add some more. I developed this app with Reactjs and designed it with CSS',
+        images: ['/images/weather-app.png'],
+        link: 'https://github.com/romigh94/weather-app'
+    },
+    {
+         title: 'Service agency',
+         technologies: ['HTML', 'CSS', 'React.js', 'NodeJS', 'MongoDB', 'Husky','Git actions', 'Jest', 'Heroku'],
+         description: 'Hello',
+         images: ['/images/Akutraket.png'],
+         link: 'https://github.com/romigh94/Tjanstformedlingssida-FE'
+    },
+    {
+        title: 'Login/Sign up form',
+        technologies: ['HTML', 'React.js', 'NodeJS', 'MongoDB'],
+        description: 'Hello',
+        images: ['/images/Loginmodul.png'],
+        link: 'https://github.com/romigh94/Loginmodul'
+    }
+]
 
   return (
-    <div>
+
+    <div className="work-container" id="/Work">
+        <h1 className="pb-5 text-center">Some things I've built</h1>
+        {projects.map((project, index) => {
+            return (
+            <div className="row" key={index}>
+            <div className='col-md pt-3' onClick={() => router.push(project.link)}>
+                <div className="img-wrapper">
+                    <img className="portfolio-Image" src={project.images} />
+                    <div className='d-flex flex-column justify-content-center img-content'>
+                    <img src="/icons/eye-icon.svg" />
+                    VIEW PROJECT
+                    </div>
+                 </div>
+            </div>
+            <div className='col-md px-5 d-flex align-items-center'>
+                <div className="text-container mt-2">
+                    <h4>{project.title}</h4>
+
+                    <div className="d-flex flex-wrap py-4">
+                    {project.technologies.map((tech, index) => {
+                        return (
+                        <div className="px-2 pt-3" key={index}>
+                            <div className="box">{tech}</div>
+                        </div>
+                        )
+                    })}
+                    </div>
+
+
+                    <img src="/icons/black_github.png" className="github-icon" onClick={() => router.push(project.link)} />
+
+                    <a href='#' onClick={() => openModal(
+                        project.title,
+                        project.technologies,
+                        project.description,
+                        project.images
+                    )}>
+                            Read more  
+                        <img src="/icons/arrow-icon.svg" className="fa fa-long-arrow-right arrow1" />
+                    </a>
+
+                    {showModal && 
+                    <WorkModal 
+                        onClose={closeModal} 
+                        title={modalContent.title}
+                        technologies={modalContent.technologies}
+                        description={modalContent.description}
+                        images={modalContent.images}
+                        links={modalContent.links}
+                    />
+                    }
+                    
+
+                </div>
+            </div>
+            </div>
+            )
+        })}
+    </div>
+   
+  )
+}
+
+export default Work
+
+
+
+/*
+ <div>
         <div className='work-container' id="/Work">
             <h1 className='pb-5 text-center'>Some things I've built</h1>
 
@@ -43,7 +180,17 @@ const router = useRouter()
                     </div>
 
                     <img src="/icons/black_github.png" className="github-icon" onClick={() => router.push('https://github.com/romigh94/freelance-project')} />
-                    <a href="#">Read more  <img src="/icons/arrow-icon.svg" class="fa fa-long-arrow-right arrow1" /></a>
+
+                    <button onClick={() => setShowModal(true)}>
+                        Read more  
+                    <img src="/icons/arrow-icon.svg" className="fa fa-long-arrow-right arrow1" />
+                    </button>
+
+                    {showModal && 
+                    <WorkModal onClose={() => setShowModal(false)} />
+                    }
+                    
+
                 </div>
             </div>
 
@@ -202,10 +349,8 @@ const router = useRouter()
         </div>
     </div>
 </div>
-  )
-}
+*/
 
-export default Work
 
 /*
 
