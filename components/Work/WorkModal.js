@@ -13,10 +13,6 @@ const WorkModal = ({onClose, title, technologies, description, images, links}) =
         }
     }
 
-    const handleClick = () => {
-        console.log(links)
-    }
-
 
 
 
@@ -47,7 +43,7 @@ const modalContent = (
                     })}
             </div>
 
-            <button onClick={handleClick} className="primary-button">View project</button>
+            <button onClick={() => router.push(links)} className="primary-button">View project</button>
         </div>
     </div>
 </div>

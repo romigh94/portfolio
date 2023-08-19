@@ -108,7 +108,8 @@ const projects = [
                         project.title,
                         project.technologies,
                         project.description,
-                        project.images
+                        project.images,
+                        project.links
                     )}>
                             Read more  
                         <img src="/icons/arrow-icon.svg" className="fa fa-long-arrow-right arrow1" />
