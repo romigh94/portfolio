@@ -1,8 +1,6 @@
 import { useRouter } from "next/router"
 import { useState } from "react"
 import WorkModal from './WorkModal'
-import Link from "next/link"
-//import Modal from 'react-modal';
 
 
 const Work = () => {
@@ -39,37 +37,37 @@ const projects = [
     {
         title: 'Web agency',
         technologies: ['HTML', 'CSS', 'Sass', 'Bootstrap', 'Vue.js'],
-        description: 'This is a side project that I am still working on. This app contains a contact form and content about the agency. I am developing this app with Vue.js and designing it with CSS and Sass.',
+        description: 'This is a side project that I am still working on. This app contains a contact form and content about the agency.',
         images: ['/images/Freelance.png'],
-        link: 'https://github.com/romigh94/freelance-project'
+        links: 'https://github.com/romigh94/freelance-project'
     },
     {
-        title: 'E-commerce',
+        title: 'E-commerce app',
         technologies: ['HTML', 'CSS', 'React.js'],
-        description: 'This was a side project where I developed a e-commerce app. This app contains a list of products where you can add to a shopping cart where you also can delete the products or add some more. I developed this app with Reactjs and designed it with CSS',
+        description: 'This was a side project. This app contains a list of products. You can add them to a shopping cart where you also can delete the products or add some more.',
         images: ['/images/e-commerce-app.png'],
-        link: 'https://github.com/romigh94/e-commerce-app'
+        links: 'https://github.com/romigh94/e-commerce-app'
     },
     {
         title: 'Weather app',
         technologies: ['HTML', 'CSS', 'React.js'],
-        description: 'This was a side project where I developed a e-commerce app. This app contains a list of products where you can add to a shopping cart where you also can delete the products or add some more. I developed this app with Reactjs and designed it with CSS',
+        description: 'Hello',
         images: ['/images/weather-app.png'],
-        link: 'https://github.com/romigh94/weather-app'
+        links: 'https://github.com/romigh94/weather-app'
     },
     {
          title: 'Service agency',
          technologies: ['HTML', 'CSS', 'React.js', 'NodeJS', 'MongoDB', 'Husky','Git actions', 'Jest', 'Heroku'],
          description: 'Hello',
          images: ['/images/Akutraket.png'],
-         link: 'https://github.com/romigh94/Tjanstformedlingssida-FE'
+         links: 'https://github.com/romigh94/Tjanstformedlingssida-FE'
     },
     {
         title: 'Login/Sign up form',
         technologies: ['HTML', 'React.js', 'NodeJS', 'MongoDB'],
         description: 'Hello',
         images: ['/images/Loginmodul.png'],
-        link: 'https://github.com/romigh94/Loginmodul'
+        links: 'https://github.com/romigh94/Loginmodul'
     }
 ]
 
@@ -80,7 +78,7 @@ const projects = [
         {projects.map((project, index) => {
             return (
             <div className="row" key={index}>
-            <div className='col-md pt-3' onClick={() => router.push(project.link)}>
+            <div className='col-md pt-3' onClick={() => router.push(project.links)}>
                 <div className="img-wrapper">
                     <img className="portfolio-Image" src={project.images} />
                     <div className='d-flex flex-column justify-content-center img-content'>
@@ -104,7 +102,7 @@ const projects = [
                     </div>
 
 
-                    <img src="/icons/black_github.png" className="github-icon" onClick={() => router.push(project.link)} />
+                    <img src="/icons/black_github.png" className="github-icon" onClick={() => router.push(project.links)} />
 
                     <a href='#' onClick={() => openModal(
                         project.title,
@@ -127,229 +125,18 @@ const projects = [
                     />
                     }
                     
-
                 </div>
             </div>
-            </div>
-            )
-        })}
-    </div>
+        </div>
+        )
+    })}
+</div>
    
   )
 }
 
 export default Work
 
-
-
-/*
- <div>
-        <div className='work-container' id="/Work">
-            <h1 className='pb-5 text-center'>Some things I've built</h1>
-
-            <div className="row">
-            <div className='col-md' onClick={() => router.push('https://github.com/romigh94/freelance-project')}>
-                <div className="img-wrapper">
-                    <img className="portfolio-Image" src="/images/Freelance.png" />
-                    <div className='d-flex flex-column justify-content-center img-content'>
-                    <img src="/icons/eye-icon.svg" />
-                    VIEW PROJECT
-                    </div>
-                 </div>
-            </div>
-            <div className='col-md px-5 d-flex align-items-center'>
-                <div className="text-container mt-2">
-                    <h4>Web agency</h4>
-
-                    <div className="d-flex flex-wrap py-4">
-                        <div className="px-2 pt-2">
-                            <div className="box">HTML</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">CSS</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">Sass</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">Bootstrap</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">Vue.js</div>
-                        </div>
-                    </div>
-
-                    <img src="/icons/black_github.png" className="github-icon" onClick={() => router.push('https://github.com/romigh94/freelance-project')} />
-
-                    <button onClick={() => setShowModal(true)}>
-                        Read more  
-                    <img src="/icons/arrow-icon.svg" className="fa fa-long-arrow-right arrow1" />
-                    </button>
-
-                    {showModal && 
-                    <WorkModal onClose={() => setShowModal(false)} />
-                    }
-                    
-
-                </div>
-            </div>
-
-        </div>
-
-            <div className="row pt-3">
-            <div className='col-md' onClick={() => router.push('https://github.com/romigh94/e-commerce-app')}>
-                <div className="img-wrapper">
-                    <img className="portfolio-Image" src="/images/e-commerce-app.png" />
-                    <div className='d-flex flex-column justify-content-center img-content'>
-                    <img src="/icons/eye-icon.svg" />
-                    VIEW PROJECT
-                    </div>
-                 </div>
-            </div>
-            <div className='col-md px-5 d-flex align-items-center'>
-                <div className="text-container mt-2">
-                    <h4>E-commerce app</h4>
-
-                    <div className="d-flex flex-wrap py-4">
-                        <div className="px-2 pt-2">
-                            <div className="box">HTML</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">CSS</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">React.js</div>
-                        </div>
-                    </div>
-
-                    <img src="/icons/black_github.png" className="github-icon" onClick={() => router.push('https://github.com/romigh94/e-commerce-app')} />
-                    <a href="#">Read more  <img src="/icons/arrow-icon.svg" class="fa fa-long-arrow-right arrow1" /></a>
-                </div>
-            </div>
-
-        </div>
-
-        <div className="row pt-3">
-            <div className='col-md' onClick={() => router.push('https://github.com/romigh94/weather-app')}>
-                <div className="img-wrapper">
-                    <img className="portfolio-Image" src="/images/weather-app.png" />
-                    <div className='d-flex flex-column justify-content-center img-content'>
-                    <img src="/icons/eye-icon.svg" />
-                    VIEW PROJECT
-                    </div>
-                 </div>
-            </div>
-
-            <div className='col-md px-5 d-flex align-items-center'>
-                <div className="text-container mt-2">
-                <h4>Weather app</h4>
-
-                <div className="d-flex flex-wrap py-4">
-                        <div className="px-2 pt-2">
-                            <div className="box">HTML</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">CSS</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">React.js</div>
-                        </div>
-                </div>
-
-                <img src="/icons/black_github.png" className="github-icon" onClick={() => router.push('https://github.com/romigh94/weather-app')} />
-                    <a href="#">Read more  <img src="/icons/arrow-icon.svg" class="fa fa-long-arrow-right arrow1" /></a>
-                </div>
-            </div>
-        </div>
-
-        <div className='row pt-3'>
-            <div className='col-md' onClick={() => router.push('https://github.com/romigh94/Tjanstformedlingssida-FE')}>
-                <div className="img-wrapper">
-                    <img className="portfolio-Image" src="/images/Akutraket.png" />
-                    <div className='d-flex flex-column justify-content-center img-content'>
-                    <img src="/icons/eye-icon.svg" />
-                    VIEW PROJECT
-                    </div>
-                 </div>
-            </div>
-            <div className='col-md px-5 d-flex align-items-center'>
-                <div className="text-container mt-2">
-                    <h4>
-                        Service agency
-                    </h4>
-                    <div className="d-flex flex-wrap py-4">
-                        <div className="px-2 pt-2">
-                            <div className="box">HTML</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">CSS</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">React.js</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">NodeJS</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">MongoDB</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">Husky</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">Git actions</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">Jest</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">Heroku</div>
-                        </div>
-                    </div>
-                    <img src="/icons/black_github.png" className="github-icon" onClick={() => router.push('https://github.com/romigh94/Tjanstformedlingssida-FE')} />
-                    <a href="#">Read more  <img src="/icons/arrow-icon.svg" class="fa fa-long-arrow-right arrow1" /></a>
-                </div>
-            </div>
-        </div>
-
-        <div className="row pt-3">
-        <div className='col-md' onClick={() => router.push('https://github.com/romigh94/Loginmodul')}>
-                <div className="img-wrapper">
-                    <img className="portfolio-Image" src="/images/Loginmodul.png" />
-                    <div className='d-flex flex-column justify-content-center img-content'>
-                    <img src="/icons/eye-icon.svg" />
-                    VIEW PROJECT
-                    </div>
-                </div>
-            </div>
-
-            <div className="col-md px-5 d-flex align-items-center">
-                <div className="text-container mt-2">
-                <h4>Login/Signup form</h4>
-                    <div className="d-flex flex-wrap py-4">
-                        <div className="px-2 pt-2">
-                            <div className="box">HTML</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">React.js</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">NodeJS</div>
-                        </div>
-                        <div className="px-2 pt-2">
-                            <div className="box">MongoDB</div>
-                        </div>
-                    </div>
-
-
-                    <img src="/icons/black_github.png" className="github-icon" onClick={() => router.push('https://github.com/romigh94/Loginmodul')} />
-                    <a href="#">Read more  <img src="/icons/arrow-icon.svg" class="fa fa-long-arrow-right arrow1" /></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-*/
 
 
 /*
