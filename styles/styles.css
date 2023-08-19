@@ -180,6 +180,7 @@ ul {
 }
 .work-container .text-container .box {
   padding: 10px 20px;
+  font-size: 16px;
   background-color: lightgrey;
   border-radius: 30px;
 }
