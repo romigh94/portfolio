@@ -36,10 +36,10 @@ const Work = () => {
 const projects = [
     {
         title: 'Web agency',
-        technologies: ['HTML', 'CSS', 'Sass', 'Bootstrap', 'Vue.js'],
-        description: 'This is a side project that I am still working on. This app contains a contact form and content about the agency.',
-        images: ['/images/Freelance.png'],
-        links: 'https://github.com/romigh94/freelance-project'
+        technologies: ['HTML', 'CSS', 'Vue.js'],
+        description: 'This is a side project that I am still working on.',
+        images: ['/images/chat-app.png'],
+        links: 'https://github.com/romigh94/chat-application'
     },
     {
         title: 'E-commerce app',
