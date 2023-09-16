@@ -35,7 +35,7 @@ const Work = () => {
 
 const projects = [
     {
-        title: 'Web agency',
+        title: 'Chat app',
         technologies: ['HTML', 'CSS', 'Vue.js'],
         description: 'This is a side project that I am still working on.',
         images: ['/images/chat-app.png'],
