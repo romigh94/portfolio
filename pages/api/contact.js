@@ -1,18 +1,13 @@
 import nodemailer from 'nodemailer'
 import sendgridTransport from 'nodemailer-sendgrid-transport'
 
-
 const transport = {
     auth: {
         api_key: process.env.API_KEY
     }
 }
 
-
 const mailer = nodemailer.createTransport(sendgridTransport(transport))
-
-//mailer(sendgridTransport(transport))
-
 
 export default async (req, res) => {
     console.log(req.body)
