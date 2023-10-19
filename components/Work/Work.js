@@ -35,6 +35,13 @@ const Work = () => {
 
 const projects = [
     {
+        title: 'Contact form',
+        technologies: ['HTML', 'CSS', 'Vue.js'],
+        description: 'This is a side project. This app contains contact form where the user adds information and press send. The information in the form is sent to a private email',
+        images: ['/images/form.png'],
+        links: 'https://sell-your-photos.vercel.app/'
+    },
+    {
         title: 'Chat app',
         technologies: ['HTML', 'CSS', 'Vue.js'],
         description: 'This is a side project that I am still working on.',
