@@ -29,7 +29,7 @@ const Mainbanner = () => {
                               className='primary-button'
                               onClick={() => router.push('#/Contact')}
                               >
-                              Contact me here
+                              Contact me
                           </button>
                           </div>
                       </div>

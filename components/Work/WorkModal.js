@@ -13,9 +13,6 @@ const WorkModal = ({onClose, title, technologies, description, images, links}) =
         }
     }
 
-
-
-
 const modalContent = (
 <div className="backdrop" onClick={handleClose}>
     <div className="work-modal">

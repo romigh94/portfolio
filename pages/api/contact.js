@@ -10,7 +10,6 @@ const transport = {
 const mailer = nodemailer.createTransport(sendgridTransport(transport))
 
 export default async (req, res) => {
-    console.log(req.body)
 
     const {name, email, message} = req.body
 

@@ -37,44 +37,37 @@ const projects = [
     {
         title: 'Contact form',
         technologies: ['HTML', 'CSS', 'Vue.js'],
-        description: 'This is a side project. This app contains contact form where the user adds information and press send. The information in the form is sent to a private email',
-        images: ['/images/form.png'],
+        description: 'Here is a side project that I have been working on — a user friendly contact form. It makes it easy for visitors to send information and get automatic email replies.',
+        images: ['/images/sell-your-photos-form.png'],
         links: 'https://sell-your-photos.vercel.app/'
     },
     {
-        title: 'Chat app',
+        title: 'Chat application',
         technologies: ['HTML', 'CSS', 'Vue.js'],
-        description: 'This is a side project that I am still working on.',
-        images: ['/images/chat-app.png'],
-        links: 'https://github.com/romigh94/chat-application'
-    },
-    {
-        title: 'E-commerce app',
-        technologies: ['HTML', 'CSS', 'React.js'],
-        description: 'This was a side project. This app contains a list of products. You can add them to a shopping cart where you also can delete the products or add some more.',
-        images: ['/images/e-commerce-app.png'],
-        links: 'https://github.com/romigh94/e-commerce-app'
+        description: 'I´m currently developing this chat app. Users can sign up, pick an avatar, and engage in real-time conversations with other users. It´s all about connecting in a fun, visual way!',
+        images: ['/images/chat-application.png'],
+        links: 'https://chat-application-two-phi.vercel.app/'
     },
     {
         title: 'Weather app',
         technologies: ['HTML', 'CSS', 'React.js'],
-        description: 'This was a side project. This app contains a search bar where you can search for different cities and countries. I developed this with a API and a filter function.',
-        images: ['/images/weather-app.png'],
-        links: 'https://github.com/romigh94/weather-app'
+        description: 'This side project combines a weather site and a search bar to find weather updates for countries or cities. It displays corresponding images based on weather conditions, creating an engaging experience.',
+        images: ['/images/weather-site.png'],
+        links: 'https://weather-app-gamma-inky-76.vercel.app/'
     },
     {
          title: 'Service agency',
          technologies: ['HTML', 'CSS', 'React.js', 'NodeJS', 'MongoDB', 'Husky','Git actions', 'Jest', 'Heroku'],
-         description: 'This was a group project at my school. In this app you can search for services, login to your own account, sign up, look for different categories etc.',
-         images: ['/images/Akutraket.png'],
+         description: 'This collaborative school project offers a comprehensive service search, user account management, login, signup, and category exploration. It´s a platform that simplifies service discovery',
+         images: ['/images/tjanstformedlingssida.png'],
          links: 'https://github.com/romigh94/Tjanstformedlingssida-FE'
     },
     {
-        title: 'Login/Sign up form',
-        technologies: ['HTML', 'React.js', 'NodeJS', 'MongoDB'],
-        description: 'This project was a individual project at my school. I developed a Login/Sign up form containing validation and authorization/authentication.',
-        images: ['/images/Loginmodul.png'],
-        links: 'https://github.com/romigh94/Loginmodul'
+        title: 'E-commerce',
+        technologies: ['HTML', 'CSS', 'React.js'],
+        description: 'As my personal side project, I´ve created an app showcasing a group of products. It allows users to customize their shopping cart, adding or removing items effortlessly, making online shopping a breeze.',
+        images: ['/images/e-commerce.png'],
+        links: 'https://github.com/romigh94/e-commerce'
     }
 ]
 
@@ -85,53 +78,45 @@ const projects = [
         {projects.map((project, index) => {
             return (
             <div className="row" key={index}>
-            <div className='col-md pt-3' onClick={() => router.push(project.links)}>
+            <div className='col-md pt-10' onClick={() => router.push(project.links)}>
                 <div className="img-wrapper">
                     <img className="portfolio-Image" src={project.images} />
-                    <div className='d-flex flex-column justify-content-center img-content'>
-                    <img src="/icons/eye-icon.svg" />
-                    VIEW PROJECT
-                    </div>
                  </div>
             </div>
             <div className='col-md px-5 d-flex align-items-center'>
                 <div className="text-container mt-2">
                     <h4>{project.title}</h4>
 
-                    <div className="d-flex flex-wrap pb-4">
-                    {project.technologies.map((tech, index) => {
-                        return (
-                        <div className="px-2 pt-3" key={index}>
-                            <div className="box">{tech}</div>
+                    <div className="inner-text-container">
+
+                        <div className="d-flex flex-wrap py-5">
+                            <p>{project.description}</p>
                         </div>
-                        )
-                    })}
+
+                        <button
+                        className="primary-button"
+                        onClick={() => openModal(
+                            project.title,
+                            project.technologies,
+                            project.description,
+                            project.images,
+                            project.links
+                        )}>
+                                Case study 
+                        </button>
+
+                        {showModal && 
+                        <WorkModal 
+                            onClose={closeModal} 
+                            title={modalContent.title}
+                            technologies={modalContent.technologies}
+                            description={modalContent.description}
+                            images={modalContent.images}
+                            links={modalContent.links}
+                        />
+                        }
+
                     </div>
-
-
-                    <img src="/icons/black_github.png" className="github-icon" onClick={() => router.push(project.links)} />
-
-                    <a href='#' onClick={() => openModal(
-                        project.title,
-                        project.technologies,
-                        project.description,
-                        project.images,
-                        project.links
-                    )}>
-                            Read more  
-                        <img src="/icons/arrow-icon.svg" className="fa fa-long-arrow-right arrow1" />
-                    </a>
-
-                    {showModal && 
-                    <WorkModal 
-                        onClose={closeModal} 
-                        title={modalContent.title}
-                        technologies={modalContent.technologies}
-                        description={modalContent.description}
-                        images={modalContent.images}
-                        links={modalContent.links}
-                    />
-                    }
                     
                 </div>
             </div>

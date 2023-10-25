@@ -20,12 +20,12 @@ a {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, button {
     font-family: $heading-font;
     color: $secondary;
 }
 
-p, div, nav, ul, li, button {
+p, div, nav, ul, li {
     font-family: K2D;
     font-size: 18px;
 }
@@ -235,18 +235,39 @@ ul {
             border-radius: 30px;
         }
         a {
-            text-decoration: none;
             color:black;
             font-size: 20px;
             margin: 20px;
+            background-color: #21d48f;
         }
 
-        a:hover {
-            color: $secondary;
-        }
-        .arrow1 {
-            animation: slide1 1s ease-in-out infinite;
-        }
+        a.arrow1 {
+            display: inline-block;
+            text-decoration: none;
+            position: relative;
+          }
+          
+          a.arrow1 img {
+            transition: transform 0.3s; /* Add a smooth transition effect */
+          }
+          
+          a.arrow1:hover img {
+            animation: moveRight 2s linear infinite; /* Add the infinite animation */
+          }
+          
+          a.arrow1:hover img,
+          a.arrow1:hover {
+            animation: moveRight 2s linear infinite; /* Add the infinite animation to the link as well */
+          }
+          
+          @keyframes moveRight {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(50px); /* Adjust the distance the image should move */
+            }
+          }
     }
 
     .card {
@@ -423,14 +444,3 @@ footer {
         transform: scale(1.1) rotate(360deg);
     }
 }
-
-@keyframes slide1 {
-    0%,
-    100% {
-      transform: translate(0, 0);
-    }
-  
-    50% {
-      transform: translate(10px, 0);
-    }
-  }
