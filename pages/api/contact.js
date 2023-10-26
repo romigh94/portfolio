@@ -14,7 +14,7 @@ export default async (req, res) => {
     const {name, email, message} = req.body
 
     const data = {
-        to: email,
+        to: process.env.CONTACT_EMAIL,
         from: process.env.CONTACT_EMAIL,
         subject: "Portfolio message",
         text: message,

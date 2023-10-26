@@ -311,7 +311,8 @@ ul {
 
 .work-modal {
   width: 80%;
-  height: auto;
+  height: 80vh;
+  overflow-y: auto;
   padding: 20px;
   margin: 40px auto;
   border-radius: 10px;

@@ -49,7 +49,7 @@ const projects = [
         links: 'https://chat-application-two-phi.vercel.app/'
     },
     {
-        title: 'Weather app',
+        title: 'Weather site',
         technologies: ['HTML', 'CSS', 'React.js'],
         description: 'This side project combines a weather site and a search bar to find weather updates for countries or cities. It displays corresponding images based on weather conditions, creating an engaging experience.',
         images: ['/images/weather-site.png'],

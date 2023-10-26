@@ -22,13 +22,19 @@ const modalContent = (
         </div>
 
 
-        <div className="text-center p-3">
+        <div className="text-center p-2">
 
-        <h2>{title}</h2>
+        <div className="title-container">
+            <h2>{title}</h2>
+        </div>
 
-        <img src={images} />
+        <div className="img-container">
+            <img src={images} />
+        </div>
 
-        <p>{description}</p>
+        <div className="description-container mx-auto w-75 pt-3 d-flex text-center">
+            <p>{description}</p>
+        </div>
 
             <div className="d-flex flex-wrap pb-3 justify-content-center">
                     {technologies.map((tech, index) => {
