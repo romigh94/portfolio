@@ -35,6 +35,20 @@ const Work = () => {
 
 const projects = [
     {
+        title: 'On going project',
+        technologies: ['HTML', 'CSS', 'Tailwind', 'Vue.js'],
+        description: "This is an ongoing project for my own startup",
+        images: ['/images/cyber-creative.png'],
+        links: "https://cyber-creative.vercel.app/"
+    },
+    {
+        title: 'For a Restaurant/bar',
+        technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js', 'NodeJS', 'Sendgrid'],
+        description: "This is a website that I've created for a restaurant/bar - The Lobby. This website contains a home page, menu page and a contact form page.",
+        images: ['/images/thelobby.png'],
+        links: "https://thelobbysthlm.nu"
+    },
+    {
         title: 'Contact form',
         technologies: ['HTML', 'CSS', 'Vue.js'],
         description: 'Here is a side project that I have been working on — a user friendly contact form. It makes it easy for visitors to send information and get automatic email replies.',
