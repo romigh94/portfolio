@@ -22,9 +22,11 @@ const router = useRouter()
         </div>
             <p className='pt-3'>
             
-            I'm a 28 year old IT geek who has a big passion for web development and webdesign. 
-            Recently, in June 2023, I graduated as a frontend developer from Jensen Yrkeshögskola in Kista. 
-            When I'm not coding, I cherish quality time spent with friends and family. 
+            Hello there! I'm a passionate Frontend Developer with experience in both frontend and backend development. I love working with different technologies and am always eager to learn.
+
+            I'm great at creating user-friendly designs using different technologies that helps me make websites that look good and work well. I enjoy learning new technologies and I'm a problem-solving enthusiast.
+
+            When I decide to do something, I go all in with confidence and a cheerful attitude. Let's work together to create awesome things!
 
             </p>
 
@@ -100,12 +102,12 @@ const router = useRouter()
                         </div>
                         <div className='col-md px-2 pt-3'>
                             <div className='skill-container'>
-                            Github
+                            Tailwind
                             </div>
                         </div>
                         <div className='col-md mx-2 mt-3'>
                             <div className='skill-container'>
-                            Heroku
+                            Git/Github
                             </div>
                         </div>
 
