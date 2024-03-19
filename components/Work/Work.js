@@ -37,7 +37,7 @@ const projects = [
     {
         title: 'On going project',
         technologies: ['HTML', 'CSS', 'Tailwind', 'Vue.js'],
-        description: "This is an ongoing project for my own startup",
+        description: "This is an ongoing project",
         images: ['/images/cyber-creative.png'],
         links: "https://cyber-creative.vercel.app/"
     },
