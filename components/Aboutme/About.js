@@ -2,138 +2,75 @@ import React from 'react'
 import { useRouter } from 'next/router'
 
 const About = () => {
+  const router = useRouter()
 
-const router = useRouter()
+  const skills = [
+    'HTML', 'CSS/Sass', 'JavaScript', 'NodeJS', 'Figma', 'React.js',
+    'Next.js', 'Vue.js', 'MongoDB', 'Bootstrap', 'Tailwind', 'Git/Github',
+    'Responsive design', 'REST API', 'Agile workflows'
+  ]
 
   return (
-    <div className='about-outer-container'>
-    <div className='about-container mx-auto text-center' id="/About">
-
-        <h1 className='text-center'>About me</h1>
-        
-        <div className='row first-row pt-3'>
-
-        <div className='col-md'>
-
-
-
-        <div className='pb-5 pt-5 text-center'>
-            <img src="/images/profile-image.jpg" className='profile-img' />
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-16 px-4" id="/About">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-bold text-gray-800 mb-6 font-kanit">
+            About Me
+          </h1>
         </div>
-            <p className='pt-3'>
+        
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Left Column - Profile */}
+          <div className="text-center lg:text-left">
+            <div className="mb-8">
+              <img 
+                src="/images/profile-image.jpg" 
+                alt="Romina Ghaderi" 
+                className="w-64 h-64 rounded-full mx-auto lg:mx-0 object-cover shadow-2xl border-4 border-white"
+              />
+            </div>
             
-            Hello there! I'm a passionate Frontend Developer with experience in both frontend and backend development. I love working with different technologies and am always eager to learn.
-
-            I'm great at creating user-friendly designs using different technologies that helps me make websites that look good and work well. I enjoy learning new technologies and I'm a problem-solving enthusiast.
-
-            When I decide to do something, I go all in with confidence and a cheerful attitude. Let's work together to create awesome things!
-
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 font-k2d">
+              Hello there! I'm a passionate Frontend Developer with experience in both frontend and backend development. I love working with different technologies and am always eager to learn.
+            </p>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 font-k2d">
+              I'm great at creating user-friendly designs using different technologies that helps me make websites that look good and work well. I enjoy learning new technologies and I'm a problem-solving enthusiast.
+            </p>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 font-k2d">
+              When I decide to do something, I go all in with confidence and a cheerful attitude. Let's work together to create awesome things!
             </p>
 
-            <button className='primary-button' onClick={() => router.push('#/Contact')}>Contact me</button>
+            <button 
+              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-k2d"
+              onClick={() => router.push('#/Contact')}
+            >
+              Contact me
+            </button>
+          </div>
+
+          {/* Right Column - Skills */}
+          <div>
+            <h4 className="text-2xl font-semibold text-gray-800 mb-8 text-center lg:text-left font-kanit">
+              Some technologies/things I've been working with:
+            </h4>
+            
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {skills.map((skill, index) => (
+                <div 
+                  key={index}
+                  className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-4 text-center border border-gray-100"
+                >
+                  <span className="text-gray-700 font-medium font-k2d">{skill}</span>
+                </div>
+              ))}
             </div>
-
-            <div className='col-md mt-5'>
-                <div className='row second-row'>
-
-                <h4 className='pt-5'>Some technologies/things I've been working with:</h4> 
-
-                        <div className='pt-3 col-md px-2'>
-                            <div className='skill-container'>
-                                HTML
-                            </div>
-                        </div>
-                        <div className='pt-3 col-md  px-2'>
-                            <div className='skill-container'>
-                                CSS/Sass
-                            </div>
-                        </div>
-                        <div className='pt-3 col-md px-2'>
-                            <div className='skill-container'>
-                                JavaScript
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='row second-row'>
-
-                        <div className='col-md px-2 pt-3'>
-                            <div className='skill-container'>
-                            NodeJS
-                            </div>
-                        </div>
-                        <div className='col-md px-2 pt-3'> 
-                            <div className='skill-container'>    
-                            Figma
-                            </div>
-                        </div>
-
-                        <div className='col-md px-2 pt-3'>
-                            <div className='skill-container'>
-                            React.js
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className='row second-row'>
-                        <div className='col-md px-2 pt-3'>
-                            <div className='skill-container'>
-                            Next.js
-                            </div>
-                        </div>
-                        <div className='col-md px-2 pt-3'>
-                            <div className='skill-container'>
-                            Vue.js
-                            </div>
-                        </div>
-                        <div className='col-md px-2 pt-3'>
-                            <div className='skill-container'>
-                            MongoDB
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='row second-row'>
-                        <div className='col-md px-2 pt-3'>
-                            <div className='skill-container'>
-                            Bootstrap
-                            </div>
-                        </div>
-                        <div className='col-md px-2 pt-3'>
-                            <div className='skill-container'>
-                            Tailwind
-                            </div>
-                        </div>
-                        <div className='col-md mx-2 mt-3'>
-                            <div className='skill-container'>
-                            Git/Github
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className='row second-row'>
-                        <div className='col-md px-2 pt-3'>
-                            <div className='skill-container'>
-                            Responsive design
-                            </div>
-                        </div>
-                        <div className='col-md px-2 pt-3'>
-                            <div className='skill-container'>
-                            REST API
-                            </div>
-                        </div>
-                        <div className='col-md mx-2 mt-3'>
-                            <div className='skill-container'>
-                            Agile workflows
-                            </div>
-                        </div>
-                    </div>               
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
   )
 }
 
