@@ -115,7 +115,7 @@ const Work = () => {
                 {/* Projects Grid */}
                 <div className="grid gap-12">
                     {projects.map((project, index) => (
-                        <div key={index} className={`bg-white rounded-3xl shadow-xl overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] border border-gray-100`}>
+                        <div key={index} className={`bg-white rounded-3xl shadow-xl overflow-hidden  duration-500  border border-gray-100`}>
                             <div className={`grid lg:grid-cols-2 ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                                 {/* Project Image */}
                                 <div className={`relative group cursor-pointer ${index % 2 === 1 ? 'lg:col-start-2' : ''}`} onClick={() => router.push(project.links)}>
@@ -158,7 +158,7 @@ const Work = () => {
                                             {project.technologies.map((tech, techIndex) => (
                                                 <span 
                                                     key={techIndex}
-                                                    className="px-3 py-1 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-sm font-medium font-k2d"
+                                                    className="px-3 py-1 bg-stone-300 text-black rounded-full text-sm font-medium font-k2d"
                                                 >
                                                     {tech}
                                                 </span>

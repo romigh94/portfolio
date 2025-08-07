@@ -36,12 +36,6 @@ const Mainbanner = () => {
                 Contact me
               </button>
               
-              <button 
-                className="px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold rounded-full text-lg transition-all duration-300 transform hover:scale-105 font-k2d"
-                onClick={() => router.push('#/Work')}
-              >
-                View My Work
-              </button>
             </div>
 
             {/* Scroll indicator */}
