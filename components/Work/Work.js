@@ -31,6 +31,24 @@ const Work = () => {
 
     const projects = [
 
+
+        {
+            title: 'Ticket system',
+            technologies: ['HTML', 'CSS', 'Vanilla JavaScript', 'MongoDB', 'NodeJS'],
+            description: 'This is a ticket system that users can use to buy tickets for events. It has a user-friendly interface and allows users to easily browse and purchase tickets for upcoming events. The system also includes an admin panel where event organizers can manage their events, view ticket sales, manage schedueles, and scan tickets at the event entrance.',
+            images: ['/images/exoplanet.png'],
+            links: 'https://exoplanet.se'
+        },
+
+        {
+            title: 'Website for a cleaning company blabla',
+            technologies: ['Wordpress', 'PHP'],
+            description: 'This is a website I created for a cleaning company called Renfix AB. I worked at Webbfabriken during this time. This website contains a home page with service information, a price calculator that allows users to get an price estimate for every service. It also has a contact form where users can send messages directly to the company. The website is designed to be user-friendly and visually appealing, providing a seamless experience for visitors looking for cleaning services.',
+            links: 'https://renfixab.se', 
+        
+    
+        },
+
                 {
             title: 'Biljett.se',
             technologies: ['HTML', 'CSS', 'Tailwind', 'Vue.js', 'Vite', 'NodeJS', 'MongoDB'],
