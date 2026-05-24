@@ -1,44 +1,49 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+
 const Navbar = () => {
-    const router = useRouter()
-    const [selected, setSelected] = useState(false)
-    const [scrolled, setScrolled] = useState(false)
+    const router = useRouter();
+    const [selected, setSelected] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     // Handle scroll effect
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 20
-            setScrolled(isScrolled)
-        }
+            const isScrolled = window.scrollY > 20;
+            setScrolled(isScrolled);
+        };
 
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
-    }, [])
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     const navItems = [
-        { name: 'About', href: '#/About' },
-        { name: 'Work', href: '#/Work' },
-        { name: 'Contact', href: '#/Contact' }
-    ]
+        { name: "About", href: "#/About" },
+        { name: "Work", href: "#/Work" },
+        { name: "Contact", href: "#/Contact" }
+    ];
 
     return (
         <div
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
                 scrolled
-                    ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200'
-                    : 'bg-transparent'
+                    ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200"
+                    : "bg-black/20 backdrop-blur-md"
             }`}
         >
             <div className="max-w-6xl mx-auto px-6">
                 <nav className="flex items-center justify-between h-20">
-                    
+
                     {/* Logo */}
                     <div className="flex items-center">
                         <a
                             href="/"
-                            className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-kanit hover:scale-105 transition-transform duration-300"
+                            className={`text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-kanit hover:scale-105 transition-transform duration-300 ${
+                                !scrolled ? "drop-shadow-md" : ""
+                            }`}
                         >
                             RG
                         </a>
@@ -50,7 +55,9 @@ const Navbar = () => {
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className="relative text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200 font-k2d group"
+                                className={`relative text-lg font-medium transition-colors duration-200 font-k2d group ${
+                                    scrolled ? "text-gray-700" : "text-white"
+                                }`}
                             >
                                 {item.name}
 
@@ -64,7 +71,9 @@ const Navbar = () => {
                     <div className="md:hidden">
                         <button
                             onClick={() => setSelected(!selected)}
-                            className="p-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                            className={`p-2 transition-colors duration-200 ${
+                                scrolled ? "text-gray-700" : "text-white"
+                            }`}
                         >
                             {selected ? (
                                 <svg
@@ -102,7 +111,7 @@ const Navbar = () => {
                 {/* Mobile Navigation */}
                 <div
                     className={`md:hidden overflow-hidden transition-all duration-300 ${
-                        selected ? 'max-h-96 opacity-100 py-6' : 'max-h-0 opacity-0'
+                        selected ? "max-h-96 opacity-100 py-6" : "max-h-0 opacity-0"
                     }`}
                 >
                     <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 flex flex-col space-y-4">
@@ -120,7 +129,9 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
+
+export default Navbar;
 
 export default Navbar
