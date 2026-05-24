@@ -46,7 +46,7 @@ const Work = () => {
             technologies: ['Wordpress', 'PHP'],
             description:
                 'A professional business website developed for Renfix AB during my time at Webbfabriken. The website was designed to strengthen the company’s online presence and make it easier for customers to explore services and request quotes. It features a modern homepage, detailed service sections, an interactive price calculator for instant estimates, and a contact form that allows visitors to communicate directly with the company.',
-            images: ['/images/renfix.png'],
+            images: ['/images/renfixab.png'],
             links: 'https://renfixab.se'
         },
 
