@@ -31,89 +31,82 @@ const Work = () => {
 
     const projects = [
 
-
-        {
-            title: 'Ticket system',
-            technologies: ['HTML', 'CSS', 'Vanilla JavaScript', 'MongoDB', 'NodeJS'],
-            description: 'This is a ticket system that users can use to buy tickets for events. It has a user-friendly interface and allows users to easily browse and purchase tickets for upcoming events. The system also includes an admin panel where event organizers can manage their events, view ticket sales, manage schedueles, and scan tickets at the event entrance.',
-            images: ['/images/exoplanet.png'],
-            links: 'https://exoplanet.se'
-        },
-
-        {
-            title: 'Website for a cleaning company blabla',
-            technologies: ['Wordpress', 'PHP'],
-            description: 'This is a website I created for a cleaning company called Renfix AB. I worked at Webbfabriken during this time. This website contains a home page with service information, a price calculator that allows users to get an price estimate for every service. It also has a contact form where users can send messages directly to the company. The website is designed to be user-friendly and visually appealing, providing a seamless experience for visitors looking for cleaning services.',
-            links: 'https://renfixab.se', 
-        
-    
-        },
-
-                {
-            title: 'Biljett.se',
-            technologies: ['HTML', 'CSS', 'Tailwind', 'Vue.js', 'Vite', 'NodeJS', 'MongoDB'],
-            description: "A comprehensive online platform for managing ticket sales and event information. It allows users to create, manage, and sell tickets for various events, providing a seamless experience for both organizers and attendees.",
-            images: ['/images/biljett-se.png'],
-            links: 'https://biljett-se.vercel.app'
-        },
-
-        {
-            title: 'Mindful Learning',
-            technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js', 'Vite', 'NodeJS', 'MongoDB'],
-            description: "A comprehensive online platform used by both school staff and students to manage core academic processes—such as grade submissions, course information, scheduling, and communication—all in one centralized place.",
-            images: ['/images/mindful-learning.png'],
-            links: 'https://mindfullearning.se'
-        },
-        {
-            title: 'The Indian Brasserie',
-            technologies: ['Wordpress', 'HTML', 'CSS'],
-            description: 'A website I created for a restaurant called The Indian Brasserie. This website contains a home page, about page and menu pages',
-            images: ['/images/theindianbrasserie.png'],
-            links: 'https://theindianbrasserie.se'
-        },
-        {
-            title: 'Sigges husman',
-            technologies: ['Wordpress', 'HTML', 'CSS'],
-            description: "A website I created for a restaurant called Sigges husman. This website contains a home page, menu page and a contact form page.",
-            images: ['/images/sigges-husman.png'],
-            links: 'https://siggeshusman.se'
-        },
-        {
-            title: 'The Lounge Bar',
-            technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js', 'PHP', 'MySQL'],
-            description: 'This is a website that I created for a restaurant/bar called The Lounge Bar. This website contains a home page, menu page, and a contact form page.',
-            images: ['/images/lounge-bar.png'],
-            links: 'https://theloungebar.se'
-        },
-        {
-            title: 'On going project',
-            technologies: ['HTML', 'CSS', 'Tailwind', 'Vue.js'],
-            description: "This is an ongoing project",
-            images: ['/images/cyber-creative.png'],
-            links: "https://cyber-creative.vercel.app/"
-        },
-        {
-            title: 'For a Restaurant/bar',
-            technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js', 'NodeJS', 'Sendgrid'],
-            description: "This is a website that I've created for a restaurant/bar - The Lobby. This website contains a home page, menu page and a contact form page.",
-            images: ['/images/thelobby.png'],
-            links: "https://thelobbysthlm.nu"
-        },
-
-        {
-            title: 'Chat application',
-            technologies: ['HTML', 'CSS', 'Vue.js'],
-            description: 'I´m currently developing this chat app. Users can sign up, pick an avatar, and engage in real-time conversations with other users. It´s all about connecting in a fun, visual way!',
-            images: ['/images/chat-application.png'],
-            links: 'https://chat-application-two-phi.vercel.app/'
-        },
-        {
-            title: 'Weather site',
-            technologies: ['HTML', 'CSS', 'React.js'],
-            description: 'This side project combines a weather site and a search bar to find weather updates for countries or cities. It displays corresponding images based on weather conditions, creating an engaging experience.',
-            images: ['/images/weather-site.png'],
-            links: 'https://weather-app-gamma-inky-76.vercel.app/'
-        },
+{
+    title: 'Ticket System',
+    technologies: ['HTML', 'CSS', 'Vanilla JavaScript', 'MongoDB', 'NodeJS'],
+    description: 'A full-stack ticket management platform built for event organizers and attendees. Users can browse upcoming events, purchase tickets securely, and receive digital confirmations. The system includes an advanced admin dashboard where organizers can create and manage events, monitor ticket sales in real time, update schedules, and scan tickets directly at the entrance for smooth event check-ins. The project focuses on usability, performance, and scalable backend functionality using MongoDB and Node.js.',
+    images: ['/images/exoplanet.png'],
+    links: 'https://exoplanet.se'
+},
+{
+    title: 'Website for a Cleaning Company',
+    technologies: ['Wordpress', 'PHP'],
+    description: 'A professional business website developed for Renfix AB during my time at Webbfabriken. The website was designed to strengthen the company’s online presence and make it easier for customers to explore services and request quotes. It features a modern homepage, detailed service sections, an interactive price calculator for instant estimates, and a contact form that allows visitors to communicate directly with the company. The focus was on responsive design, accessibility, and creating a clean user experience tailored for both desktop and mobile users.',
+    links: 'https://renfixab.se',
+},
+{
+    title: 'Biljett.se',
+    technologies: ['HTML', 'CSS', 'Tailwind', 'Vue.js', 'Vite', 'NodeJS', 'MongoDB'],
+    description: 'An event and ticketing platform developed to simplify the process of creating, managing, and selling tickets online. Organizers can publish events, track attendance, and manage ticket inventory, while users can easily browse events and complete purchases through a modern and responsive interface. Built with Vue.js and Tailwind CSS on the frontend and powered by a Node.js and MongoDB backend, the platform was designed with scalability, performance, and user experience in mind.',
+    images: ['/images/biljett-se.png'],
+    links: 'https://biljett-se.vercel.app'
+},
+{
+    title: 'Mindful Learning',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js', 'Vite', 'NodeJS', 'MongoDB'],
+    description: 'A complete educational platform designed for schools, teachers, and students to manage academic workflows in one centralized system. The platform includes features such as grade management, course administration, scheduling, announcements, and communication tools between staff and students. The project focused on creating a clean and intuitive user interface while building scalable backend functionality capable of handling multiple user roles and large amounts of educational data.',
+    images: ['/images/mindful-learning.png'],
+    links: 'https://mindfullearning.se'
+},
+{
+    title: 'The Indian Brasserie',
+    technologies: ['Wordpress', 'HTML', 'CSS'],
+    description: 'A modern restaurant website created for The Indian Brasserie to showcase the restaurant’s brand, menu, and atmosphere online. The site includes a visually engaging homepage, an about section introducing the restaurant, and multiple menu pages that present dishes in a clear and attractive way. The design was built to provide a smooth browsing experience across all devices while reflecting the restaurant’s identity and style.',
+    images: ['/images/theindianbrasserie.png'],
+    links: 'https://theindianbrasserie.se'
+},
+{
+    title: 'Sigges Husman',
+    technologies: ['Wordpress', 'HTML', 'CSS'],
+    description: 'A restaurant website built for Sigges Husman with a focus on simplicity, accessibility, and easy navigation. The website features a welcoming homepage, a structured menu section, and a contact page where visitors can quickly get in touch with the restaurant. The project emphasized responsive design and clean layouts to ensure a user-friendly experience on both desktop and mobile devices.',
+    images: ['/images/sigges-husman.png'],
+    links: 'https://siggeshusman.se'
+},
+{
+    title: 'The Lounge Bar',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js', 'PHP', 'MySQL'],
+    description: 'A responsive and modern website developed for The Lounge Bar to promote the venue and provide visitors with essential information. The site includes a stylish homepage, food and drink menus, and a contact form connected to a backend system using PHP and MySQL. The goal of the project was to create an engaging digital experience that matched the atmosphere of the restaurant and bar while ensuring fast performance and easy content management.',
+    images: ['/images/lounge-bar.png'],
+    links: 'https://theloungebar.se'
+},
+{
+    title: 'Ongoing Project',
+    technologies: ['HTML', 'CSS', 'Tailwind', 'Vue.js'],
+    description: 'An ongoing creative web project currently under active development. The project focuses on building a modern and visually appealing digital experience using Vue.js and Tailwind CSS. Current work includes improving UI/UX design, implementing responsive layouts, and developing reusable frontend components with a strong focus on performance and scalability.',
+    images: ['/images/cyber-creative.png'],
+    links: 'https://cyber-creative.vercel.app/'
+},
+{
+    title: 'The Lobby',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js', 'NodeJS', 'Sendgrid'],
+    description: 'A custom website created for The Lobby restaurant and bar, featuring a modern design and responsive user interface. The site includes a homepage, menu pages, and a fully functional contact form integrated with SendGrid for email handling. The project focused on creating a seamless browsing experience while providing the business with a professional online presence that reflects the venue’s atmosphere and branding.',
+    images: ['/images/thelobby.png'],
+    links: 'https://thelobbysthlm.nu'
+},
+{
+    title: 'Chat Application',
+    technologies: ['HTML', 'CSS', 'Vue.js'],
+    description: 'A real-time chat application currently under development where users can create accounts, customize profiles with avatars, and communicate instantly with other users. The project focuses on building an interactive and engaging social experience with a modern interface, smooth real-time updates, and scalable frontend architecture using Vue.js.',
+    images: ['/images/chat-application.png'],
+    links: 'https://chat-application-two-phi.vercel.app/'
+},
+{
+    title: 'Weather Site',
+    technologies: ['HTML', 'CSS', 'React.js'],
+    description: 'A weather application built with React.js that allows users to search for cities or countries and instantly view current weather conditions. The application dynamically displays images and visuals based on the weather, creating a more immersive user experience. The project combines API integration, responsive design, and interactive frontend functionality to deliver accurate weather information in an engaging format.',
+    images: ['/images/weather-site.png'],
+    links: 'https://weather-app-gamma-inky-76.vercel.app/'
+}
 
     ]
 
