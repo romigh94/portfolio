@@ -210,9 +210,7 @@ const Work = () => {
                                                 : project.description}
                                         </p>
 
-                                        <span className="text-blue-600 font-medium font-k2d">
-                                            Read more →
-                                        </span>
+
                                     </div>
 
                                     {/* Technologies */}
